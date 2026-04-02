@@ -7,9 +7,14 @@ Native desktop app for managing course-to-ABET learning outcome mappings
 from flask import Flask, render_template, jsonify, request
 import json
 import os
+import subprocess
 import sys
 import threading
 import webview
+from openpyxl import Workbook
+from openpyxl.styles import Alignment
+from openpyxl.styles import Font, PatternFill
+from openpyxl.utils import get_column_letter
 
 # Get the base path for resources (works with PyInstaller)
 def get_resource_path(relative_path):
@@ -63,6 +68,27 @@ def load_data():
         mapping_data = json.load(f)
     
     return abet_data, courses_data, mapping_data
+
+
+def get_export_dir():
+    """Choose a user-friendly export directory."""
+    downloads_dir = os.path.expanduser('~/Downloads')
+    if os.path.isdir(downloads_dir):
+        return downloads_dir
+    return get_data_dir()
+
+
+def open_file_with_default_app(file_path):
+    """Open a file with the platform default application."""
+    try:
+        if sys.platform == 'darwin':
+            subprocess.Popen(['open', file_path])
+        elif os.name == 'nt':
+            os.startfile(file_path)
+        else:
+            subprocess.Popen(['xdg-open', file_path])
+    except Exception:
+        pass
 
 @app.route('/')
 def index():
@@ -193,6 +219,99 @@ def get_gaps():
                         })
     
     return jsonify(gaps)
+
+
+@app.route('/api/export/coverage-matrix', methods=['POST'])
+def export_coverage_matrix():
+    """Export full ABET-to-course coverage matrix to an Excel workbook."""
+    abet_data, courses_data, mapping_data = load_data()
+
+    workbook = Workbook()
+    worksheet = workbook.active
+    worksheet.title = 'Coverage Matrix'
+
+    sorted_courses = sorted(courses_data.values(), key=lambda course: course['code'])
+    headers = ['ABET Requirement'] + [course['code'] for course in sorted_courses]
+    worksheet.append(headers)
+
+    header_fill = PatternFill(fill_type='solid', start_color='DCE6F1', end_color='DCE6F1')
+    header_font = Font(bold=True)
+    covered_fill = PatternFill(fill_type='solid', start_color='E2F0D9', end_color='E2F0D9')
+    section_fill = PatternFill(fill_type='solid', start_color='FFF2CC', end_color='FFF2CC')
+
+    for cell in worksheet[1]:
+        cell.font = header_font
+        cell.fill = header_fill
+        cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
+
+    abet_to_course = mapping_data.get('abet_to_course', {})
+    worksheet.sheet_properties.outlinePr.summaryBelow = False
+
+    current_row = 2
+    for area_code in sorted(abet_data.keys()):
+        area_info = abet_data[area_code]
+        detail_rows = []
+        section_has_coverage = {course['code']: False for course in sorted_courses}
+
+        for category, subareas in area_info['categories'].items():
+            for subarea, outcomes in subareas.items():
+                for index, outcome in enumerate(outcomes, start=1):
+                    outcome_id = f'{area_code}.{category}.{subarea}.{index}'
+                    mapped_courses = set(abet_to_course.get(outcome_id, []))
+                    for course in sorted_courses:
+                        if course['code'] in mapped_courses:
+                            section_has_coverage[course['code']] = True
+
+                    detail_rows.append([
+                        f'{outcome_id} - {outcome["outcome"]}',
+                        *('x' if course['code'] in mapped_courses else '' for course in sorted_courses)
+                    ])
+
+        summary_row = [f'{area_code} - {area_info["name"]}']
+        summary_row.extend('x' if section_has_coverage[course['code']] else '' for course in sorted_courses)
+        worksheet.append(summary_row)
+
+        for cell in worksheet[current_row]:
+            cell.font = header_font
+            cell.fill = section_fill
+            cell.alignment = Alignment(vertical='center', wrap_text=True)
+            if cell.column > 1 and cell.value == 'x':
+                cell.fill = covered_fill
+                cell.font = header_font
+                cell.alignment = Alignment(horizontal='center', vertical='center')
+
+        summary_row_index = current_row
+        current_row += 1
+
+        for detail_row in detail_rows:
+            worksheet.append(detail_row)
+            for index, cell in enumerate(worksheet[current_row], start=1):
+                cell.alignment = Alignment(vertical='top', wrap_text=True)
+                if index > 1 and cell.value == 'x':
+                    cell.fill = covered_fill
+                    cell.alignment = Alignment(horizontal='center', vertical='center')
+
+            worksheet.row_dimensions[current_row].outlineLevel = 1
+            worksheet.row_dimensions[current_row].hidden = True
+            current_row += 1
+
+        if detail_rows:
+            worksheet.row_dimensions[summary_row_index].collapsed = True
+
+    worksheet.freeze_panes = 'B2'
+    worksheet.column_dimensions['A'].width = 110
+    for column_index in range(2, len(headers) + 1):
+        worksheet.column_dimensions[get_column_letter(column_index)].width = 14
+
+    for row_index in range(2, worksheet.max_row + 1):
+        worksheet.row_dimensions[row_index].height = 42
+
+    export_dir = get_export_dir()
+    file_path = os.path.join(export_dir, 'abet-course-coverage-matrix.xlsx')
+    workbook.save(file_path)
+    open_file_with_default_app(file_path)
+
+    return jsonify({'success': True, 'path': file_path})
 
 def start_flask():
     """Start Flask server in a separate thread"""

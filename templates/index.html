@@ -378,6 +378,21 @@
             margin-bottom: 10px;
         }
 
+        .export-matrix-btn {
+            background: #005696;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 12px;
+        }
+
+        .export-matrix-btn:hover {
+            background: #00477d;
+        }
+
         .progress-bar {
             width: 100%;
             height: 30px;
@@ -867,6 +882,27 @@
             return outcomeObj?.outcome || 'Outcome text not found';
         }
 
+        async function exportCoverageMatrix() {
+            try {
+                const response = await fetch('/api/export/coverage-matrix', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const result = await response.json();
+                if (!response.ok || !result.success) {
+                    throw new Error(result.error || 'Failed to export coverage matrix');
+                }
+
+                alert(`Coverage matrix exported to:\n${result.path}`);
+            } catch (error) {
+                console.error('Error exporting coverage matrix:', error);
+                alert('Failed to export coverage matrix. Please try again.');
+            }
+        }
+
         function printCurrentCoursePlan() {
             if (!currentModalCourseCode) return;
 
@@ -1123,18 +1159,26 @@
 
         function renderGaps() {
             const container = document.getElementById('gaps-list');
+            let html = `
+                <div class="gap-alert">
+                    <h3>Coverage Matrix Export</h3>
+                    <p style="color: #a0a0a0;">Download a CSV matrix with ABET requirements on the left and courses as columns, marked with an x where coverage exists.</p>
+                    <button class="export-matrix-btn" onclick="exportCoverageMatrix()">Export Coverage Matrix (CSV)</button>
+                </div>
+            `;
             
             if (gapsData.length === 0) {
-                container.innerHTML = `
+                html += `
                     <div style="text-align: center; padding: 40px; color: #a0a0a0;">
                         <h2 style="color: #e5e5e5;">No Coverage Gaps</h2>
                         <p style="color: #888888; margin-top: 10px;">All ABET outcomes are covered by courses.</p>
                     </div>
                 `;
+                container.innerHTML = html;
                 return;
             }
 
-            let html = `
+            html += `
                 <div class="gap-alert">
                     <h3>${gapsData.length} Uncovered Learning Outcomes</h3>
                     <p style="color: #a0a0a0;">The following ABET outcomes are not currently mapped to any course.</p>
