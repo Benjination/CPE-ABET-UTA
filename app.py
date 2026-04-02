@@ -10,7 +10,10 @@ import os
 import subprocess
 import sys
 import threading
-import webview
+try:
+    import webview
+except Exception:
+    webview = None
 from openpyxl import Workbook
 from openpyxl.styles import Alignment
 from openpyxl.styles import Font, PatternFill
@@ -318,6 +321,11 @@ def start_flask():
     app.run(host='127.0.0.1', port=5001, debug=False, use_reloader=False)
 
 if __name__ == '__main__':
+    if webview is None:
+        port = int(os.environ.get('PORT', '5001'))
+        app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
+        sys.exit(0)
+
     print("\n" + "="*60)
     print("ABET CPE Course Mapping System")
     print("="*60)
