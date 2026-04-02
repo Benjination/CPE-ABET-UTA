@@ -1,0 +1,277 @@
+{
+  "CSE4317": {
+    "code": "CSE4317",
+    "department": "CSE",
+    "number": "4317",
+    "name": "COMPUTER SYSTEM DESIGN PROJECT II",
+    "description": "Implementation, integration, quality assurance through peer review and testing, and deployment of the project designed in",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE4316": {
+    "code": "CSE4316",
+    "department": "CSE",
+    "number": "4316",
+    "name": "COMPUTER SYSTEM DESIGN PROJECT I",
+    "description": "Analysis and design of an industry-type project that involves hardware and software components to meet desired needs within realistic constraints and standards. The project is to be completed in",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE4323": {
+    "code": "CSE4323",
+    "department": "CSE",
+    "number": "4323",
+    "name": "QUANTITATIVE COMPUTER ARCHITECTURE",
+    "description": "Pipelined processors, parallel processors including shared and distributed memory, multicore, Very Long Instruction Word (VLIW) and graphics processors, memory and cache design, computer peripherals, and computer clusters. Prerequisite: Admitted into an Engineering Professional Program. C or better in",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE4342": {
+    "code": "CSE4342",
+    "department": "CSE",
+    "number": "4342",
+    "name": "EMBEDDED SYSTEMS II",
+    "description": "Advanced course in design of microcontroller-based systems. Emphasis is on the application of microcontrollers to real-time problems. Topics include the study of the differences in bare metal and embedded Linux implementations, simple Linux character device drivers, bootloader design, watchdog and supervision concepts, and developing applications such as PID controllers. Course includes significant laboratory content and a project with extensive hardware and software requirements. Prerequisite: Admitted into an Engineering Professional Program. C or better in each of the following:",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE4314": {
+    "code": "CSE4314",
+    "department": "CSE",
+    "number": "4314",
+    "name": "PROFESSIONAL PRACTICES",
+    "description": "Ethics. Contemporary social aspects and responsibilities of computing in a global, societal context. Lifelong learning goals and resources. Entrepreneurship and intellectual property. Project involving written and oral communication. Prerequisite: Admitted into an Engineering Professional Program. C or better in COMS 2302.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "COMS2302": {
+    "code": "COMS2302",
+    "department": "COMS",
+    "number": "2302",
+    "name": "TECHNICAL WRITING AND PUBLIC SPEAKING",
+    "description": "Writing and speaking skills in technical environments. Document design, technical style, audience analysis, collaborative writing, editing, ethics, and oral presentations. Prerequisite: C or better in ENGL 1302 or waiver.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE3323": {
+    "code": "CSE3323",
+    "department": "CSE",
+    "number": "3323",
+    "name": "ELECTRONICS",
+    "description": "Design, analysis and testing of electronic circuits.  Topics include operational amplifiers, diodes, bipolar-junction transistors (BJTs), and field-effect transistors (FETs) and their applications.  Concurrent laboratory experiments complement lecture topics. Prerequisite: C or better in",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "IE1301": {
+    "code": "IE1301",
+    "department": "IE",
+    "number": "1301",
+    "name": "INTRODUCTION TO ENGINEERING",
+    "description": "Introduction to the engineering profession; problem-solving techniques; numerical and analytical skills; engineering measurements; interpretation and analysis of data; engineering design process. Laboratory. Prerequisite: UNIV 1131 or concurrent enrollment.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE3320": {
+    "code": "CSE3320",
+    "department": "CSE",
+    "number": "3320",
+    "name": "OPERATING SYSTEMS",
+    "description": "Functions and components of an operating system, including process synchronization, job scheduling, memory management, file systems protection, and deadlocks. Related system software, such as loaders, linkers, assemblers, and windowing systems. Prerequisite: C or better in",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE3380": {
+    "code": "CSE3380",
+    "department": "CSE",
+    "number": "3380",
+    "name": "LINEAR ALGEBRA FOR CSE",
+    "description": "Solving systems of equations, matrix algebra, determinants, vector spaces, orthogonality and least squares, with applications to computer science. Prerequisite: C or better in",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE3313": {
+    "code": "CSE3313",
+    "department": "CSE",
+    "number": "3313",
+    "name": "INTRODUCTION TO SIGNAL PROCESSING",
+    "description": "Examines models for presentation and processing of digital signals. Sampling theorem, correlation and convolution, time and frequency analysis of linear systems, Fourier transform, Z-transform, design of digital filters structures for discrete time systems. Prerequisite: C or better in each of the following:",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE3442": {
+    "code": "CSE3442",
+    "department": "CSE",
+    "number": "3442",
+    "name": "MICROPROCESSOR MICROCONTROLLER ARCHITECTURE",
+    "description": "Architecture of microprocessors and microcontrollers. Instruction set architecture. Memory organization. Input/output and interfacing. Assembly language programming. Hardware/software integration. Prerequisite: C or better in CSE 2312 and C or better in CSE 2441.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 4
+  },
+  "CSE3441": {
+    "code": "CSE3441",
+    "department": "CSE",
+    "number": "3441",
+    "name": "EMBEDDED SYSTEMS I",
+    "description": "Microcontrollers and embedded systems. Input/output interfacing. Interrupt processing. Serial communication. Embedded software development. Real-time operating systems concepts. Hardware/software co-design. Prerequisite: C or better in CSE 2312 and C or better in CSE 2441.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 4
+  },
+  "CSE2440": {
+    "code": "CSE2440",
+    "department": "CSE",
+    "number": "2440",
+    "name": "CIRCUIT ANALYSIS",
+    "description": "Basic principles of electrical circuits using resistors, capacitors and inductors. Filter analysis and synthesis using complex algebra. Introduction to operational amplifiers. Time domain and frequency domain analysis and taxonomy of signals. Concurrent laboratory experiments complement lecture topics. Prerequisite: \nGrade C or better in",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 4
+  },
+  "CSE3318": {
+    "code": "CSE3318",
+    "department": "CSE",
+    "number": "3318",
+    "name": "ALGORITHMS & DATA STRUCTURES",
+    "description": "Design and analysis of algorithms with an emphasis on data structures. Approaches to analyzing lower bounds on problems and upper bounds on algorithms. Classical algorithm design techniques including algorithms for sorting, searching, and other operations on data structures such as hash tables, trees, graphs, strings, and advanced data structures, dynamic programming and greedy approaches. Prerequisite:",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE2441": {
+    "code": "CSE2441",
+    "department": "CSE",
+    "number": "2441",
+    "name": "DIGITAL LOGIC DESIGN I",
+    "description": "Analysis, design and testing of combinational and sequential logic circuits. Topics include Boolean algebra, logic circuit minimization techniques, synchronous sequential circuit design, algorithmic state machine design, design of arithmetic/logic and control units, and Verilog programming of FPGA devices. Prerequisite:",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 4
+  },
+  "CSE2312": {
+    "code": "CSE2312",
+    "department": "CSE",
+    "number": "2312",
+    "name": "COMPUTER ORGANIZATION & ASSEMBLY LANGUAGE PROGRAMMING",
+    "description": "Number systems and data representations; computer organization and instruction set architecture; assembly language programming covering arithmetic operations, control structures, function calls, and memory access. Prerequisite: C or better in CSE 1310 or CSE 1311.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE1325": {
+    "code": "CSE1325",
+    "department": "CSE",
+    "number": "1325",
+    "name": "OBJECT-ORIENTED PROGRAMMING",
+    "description": "Introduction to object-oriented programming using classes, objects, methods, and inheritance. Software development using objects. Introduction to graphical user interfaces, event-driven programming. Prerequisite: C or better in CSE 1310 or CSE 1311.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE1320": {
+    "code": "CSE1320",
+    "department": "CSE",
+    "number": "1320",
+    "name": "INTERMEDIATE PROGRAMMING",
+    "description": "https://catalog.uta.edu/science/math/undergraduate/math-uteach-option-bs/",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE1310": {
+    "code": "CSE1310",
+    "department": "CSE",
+    "number": "1310",
+    "name": "INTRODUCTION TO COMPUTERS & PROGRAMMING",
+    "description": "An introduction to the computer, to the algorithmic process, and to programming using basic control and data structures, using a procedural language. Prerequisite: C or better in MATH 1302 or MATH 1402 or C or better in (or concurrent enrollment in) a subsequent mathematics course (MATH 1421, MATH 1426, MATH 2425, MATH 2326, MATH 3330, HONR-SC 1426 or HONR-SC 2425) or a qualifying score on the ALEKS PPL and C or better in UNIV 1131 (or concurrent enrollment) or ENGR 1101 (or concurrent enrollment).",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE1106": {
+    "code": "CSE1106",
+    "department": "CSE",
+    "number": "1106",
+    "name": "INTRODUCTION TO ENGINEERING & COMPUTER SCIENCE",
+    "description": "Introduction to the profession of computer science and engineering. Ethical, social, and professional issues. Current trends in computing. Problem solving and critical thinking. Exposure to various CS and CE domains. Communication skills. Team building. Prerequisite: UNIV 1131 or concurrent enrollment or ENGR 1101 or concurrent enrollment.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 1
+  },
+  "CSE2315": {
+    "code": "CSE2315",
+    "department": "CSE",
+    "number": "2315",
+    "name": "DISCRETE STRUCTURES",
+    "description": "Propositional and predicate logic, mathematical proof techniques, sets, combinatorics, functions and relations, graphs, and graph algorithms. Prerequisite: C or better in CSE 1310 and C or better in MATH 1426 (or C or better in or concurrent enrollment in MATH 2425).",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE-NETWORKS": {
+    "code": "CSE-NETWORKS",
+    "department": "CSE",
+    "number": "XXXX",
+    "suggested": true,
+    "name": "COMPUTER NETWORKS (SUGGESTED)",
+    "description": "Suggested course for coverage. Network fundamentals, OSI model, TCP/IP protocols, routing algorithms, network security, wireless networks, and network applications. Would cover 96 CE-NWK ABET outcomes.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE-SECURITY": {
+    "code": "CSE-SECURITY",
+    "department": "CSE",
+    "number": "XXXX",
+    "suggested": true,
+    "name": "INFORMATION SECURITY (SUGGESTED)",
+    "description": "Suggested course for coverage. Security fundamentals, cryptography, authentication, secure coding practices, network security, attacks and defenses, privacy, and security policies. Would cover 83 CE-SEC ABET outcomes.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+    },
+    "CSE-DIRECTED-RESEARCH": {
+      "code": "CSE-DIRECTED-RESEARCH",
+      "department": "CSE",
+      "number": "XXXX",
+      "suggested": true,
+      "name": "DIRECTED RESEARCH (SUGGESTED)",
+      "description": "Suggested course for coverage. Faculty-supervised independent research with proposal development, literature review, implementation or experimentation, performance measurement, testing, written reporting, and oral presentation.",
+      "learning_outcomes": [],
+      "abet_mappings": [],
+      "credit_hours": 3
+  },
+  "CSE-ADV-HARDWARE": {
+    "code": "CSE-ADV-HARDWARE",
+    "department": "CSE",
+    "number": "XXXX",
+    "suggested": true,
+    "name": "ADVANCED HARDWARE SYSTEMS (SUGGESTED)",
+    "description": "Suggested course for coverage. Advanced digital and mixed-signal hardware topics including converter design, timing and testability, programmable logic architecture, signal integrity, and SoC-level embedded hardware tradeoffs.",
+    "learning_outcomes": [],
+    "abet_mappings": [],
+    "credit_hours": 3
+  },
+  "CSE-RELIABLE-DISTRIBUTED": {
+    "code": "CSE-RELIABLE-DISTRIBUTED",
+    "department": "CSE",
+    "number": "XXXX",
+    "suggested": true,
+    "name": "RELIABLE & DISTRIBUTED SYSTEMS (SUGGESTED)",
+    "description": "Suggested course for coverage. Distributed systems, virtualization, reliability and fault tolerance, formal specifications, and advanced systems architecture topics for high-integrity computing.",
+      "learning_outcomes": [],
+      "abet_mappings": [],
+      "credit_hours": 3
+  }
+}

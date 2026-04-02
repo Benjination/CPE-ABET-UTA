@@ -1,0 +1,4188 @@
+{
+  "CE-CAE": {
+    "name": "Circuits and Electronics",
+    "code": "CE-CAE",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Describe ways in which computer engineering uses or benefits from electronic devices and circuits."
+          },
+          {
+            "id": "2",
+            "outcome": "  Identify some contributors to circuits and electronics and relate their achievements to this knowledge area."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain the key differences between analog and digital systems, their implementations, and methods for approximating digital behavior with analog systems."
+          },
+          {
+            "id": "4",
+            "outcome": "  Summarize basic electrical quantities and elements that show the relationship between current and voltage."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe the use of the transistor as an amplifier and as a switch."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain the historical progression from discrete devices to integrated circuits to current state-of-the-art electronics."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Describe at least two common types of circuit simulators and contrast the advantages and applications of each."
+          },
+          {
+            "id": "2",
+            "outcome": "  Interpret issues associated with interfacing digital computer systems with an analog world, including the use of standard data conversion circuits."
+          },
+          {
+            "id": "3",
+            "outcome": "  Summarize the role of standards in compatibility, interconnection, and safety of systems."
+          },
+          {
+            "id": "4",
+            "outcome": "  Articulate the purpose of buses and other interconnection and communication networks."
+          },
+          {
+            "id": "5",
+            "outcome": "  Illustrate the role of constraints, parameters, and tradeoffs in electronic circuit design."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  State the definitions and representations of basic electrical quantities (charge, current, voltage, energy, power), as well as the relationships among them."
+          },
+          {
+            "id": "2",
+            "outcome": "  Define and represent basic circuit elements (resistors, inductors, capacitors)."
+          },
+          {
+            "id": "3",
+            "outcome": "  Solve problems using Ohm’s law, including its power representations."
+          },
+          {
+            "id": "4",
+            "outcome": "  Analyze basic electrical circuits using Ohm’s law."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain the difference between resistance and reactance, the meaning of phase, and the effect of frequency on capacitance and inductance."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Contrast various elements of circuit models including independent and dependent sources as well as series and parallel elements."
+          },
+          {
+            "id": "2",
+            "outcome": "  Analyze basic electrical circuits using mesh and nodal analysis, Kirchoff’s laws, superposition, Thevenin’s theorem, and Norton’s theorem."
+          },
+          {
+            "id": "3",
+            "outcome": "Apply properties of circuits containing various combinations of resistance (R), inductance (L), and capacitance (C) elements including time constants, transient and steady-state responses, and damping."
+          },
+          {
+            "id": "4",
+            "outcome": "  Analyze and design simple circuits containing R, L, and C elements."
+          },
+          {
+            "id": "5",
+            "outcome": "  Illustrate the frequency domain characteristics of electrical circuits."
+          },
+          {
+            "id": "6",
+            "outcome": "  Contrast power for resistive and reactive circuits."
+          },
+          {
+            "id": "7",
+            "outcome": "  Define and use the phasor representations of voltage and current in analyzing circuits."
+          },
+          {
+            "id": "8",
+            "outcome": "  Calculate the response of electrical circuits from sinusoidal signal excitation."
+          },
+          {
+            "id": "9",
+            "outcome": "  Define and use impedance and admittance as well as source transformations."
+          },
+          {
+            "id": "10",
+            "outcome": "  Model and analyze simple resistive and RLC circuits using a circuit simulator."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Explain characteristics and properties of electronic materials including electrons and holes; doping, acceptors, and donors; p-type and n-type materials; conductivity and resistivity; drift and diffusion currents, mobility, and diffusivity."
+          },
+          {
+            "id": "2",
+            "outcome": "  Illustrate the operation and properties of diodes, including I-V characteristics, regions of operation, equivalent circuit models and their limitations."
+          },
+          {
+            "id": "3",
+            "outcome": "  Illustrate the operation and properties of NPN and PNP transistors, including I-V characteristics, regions of operation, equivalent circuit models and their limitations, and transfer characteristic with a load resistor."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast NPN and PNP transistor biasing for logic and amplifier applications."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain the properties of bipolar transistors when used as amplifiers and as switches."
+          },
+          {
+            "id": "6",
+            "outcome": "  Produce mathematical models to represent material properties of electronic devices."
+          },
+          {
+            "id": "7",
+            "outcome": "  Provide examples of using mathematical models in circuit simulators."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Illustrate the operation and properties of nMOS (n-type metal-oxide semiconductor) and pMOS field-effect transistors, including I-V characteristics, regions of operation, equivalent circuit models and their limitations, enhancement-mode and depletion-mode devices, and transfer characteristic with a load resistor."
+          },
+          {
+            "id": "2",
+            "outcome": "  Apply nMOS and pMOS transistor biasing for logic and amplifier applications."
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast the properties of nMOS and pMOS transistors used as switches."
+          },
+          {
+            "id": "4",
+            "outcome": "  Implement basic logic functions using nMOS, pMOS, and complementary metal-oxide semiconductor (CMOS) logic."
+          },
+          {
+            "id": "5",
+            "outcome": "  Implement logic functions using pass transistors and transmission gates."
+          },
+          {
+            "id": "6",
+            "outcome": "  Analyze the implications of implementing logic functions with switch networks versus logic gates."
+          },
+          {
+            "id": "7",
+            "outcome": "  Define propagation delay, rise time, and fall time."
+          },
+          {
+            "id": "8",
+            "outcome": "  Illustrate simplified Unit-Delay and Tau models for circuit timing."
+          },
+          {
+            "id": "9",
+            "outcome": "  Analyze the effects of logic gate fan-in and fan-out on circuit timing and power and their associated tradeoffs."
+          },
+          {
+            "id": "10",
+            "outcome": "  Contrast the effects of transistor sizing on timing and power, including nMOS and CMOS power/delay scaling."
+          },
+          {
+            "id": "11",
+            "outcome": "  Compute the effects on circuit characteristics of various design styles, e.g., static logic, dynamic logic, multiple clocking schemes."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Contrast the circuit properties of implementations of various storage elements (e.g., latches, flip-flops, clocked registers)."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast the circuit properties of implementations of various memory cells (e.g., static RAM, dynamic RAM, ROM) and related circuitry (e.g., sense amplifiers)."
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast storage elements and memory cells, emphasizing the tradeoffs that make each appropriate for specific uses."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Explain the practical difficulties resulting from interfacing signals within a system and to the external world."
+          },
+          {
+            "id": "2",
+            "outcome": "  Employ terminal characteristics of various logic families and of standard interfaces."
+          },
+          {
+            "id": "3",
+            "outcome": "  Write the requirements for common signal translations between different logic families, such as between transistor-transistor logic (TTL) and CMOS."
+          },
+          {
+            "id": "4",
+            "outcome": "  Illustrate common methods to overcome difficulties when interfacing different logic families."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain the practical difficulties resulting from single-ended to differential and differential to single-ended conversions."
+          },
+          {
+            "id": "6",
+            "outcome": "  Contrast transmission line characteristics, reflections, and options for bus termination including passive, active, DC, and alternating current (AC) features."
+          }
+        ],
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Interpret the properties of an ideal operational amplifier (op-amp)."
+          },
+          {
+            "id": "2",
+            "outcome": "  Analyze and design circuits containing ideal op-amp circuits to include inverting and non-inverting amplifiers, summing and difference amplifiers, integrators, and low-pass filters."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Discuss common types of mixed-signal circuits and applications, including digital-to-analog (D/A) and analog-to-digital (A/D) converters  and sample-and-hold circuits."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe key characteristics of D/A and A/D converters, such as least-significant bit (LSB), linearity, offset, and gain errors."
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast the properties that distinguish between specific D/A and A/D converters for meeting system design requirements."
+          },
+          {
+            "id": "4",
+            "outcome": "  Analyze issues associated with the integration of digital and analog circuits in a single IC or package, including both benefits and challenges."
+          },
+          {
+            "id": "5",
+            "outcome": "  Provide examples of commercial mixed-signal devices."
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "3": [
+          {
+            "id": "6",
+            "outcome": "  Interpret the role of capacitors and inductors as basic storage elements."
+          },
+          {
+            "id": "7",
+            "outcome": "  Contrast related electrical quantities and concepts including frequency response, sinusoids, convolution, diodes and transistors, and other storage elements."
+          },
+          {
+            "id": "8",
+            "outcome": "  Provide examples of using circuit simulators to model and analyze simple circuits."
+          }
+        ],
+        "4": [
+          {
+            "id": "11",
+            "outcome": "  Identify the characteristics and uses of transformers."
+          },
+          {
+            "id": "12",
+            "outcome": "Explain the relation between electrical quantities and concepts such as transfer functions, two-port circuits, parallel and series resonance, maximum power transfer, and mutual inductance."
+          },
+          {
+            "id": "13",
+            "outcome": "  Describe the characteristics of electronic voltage sources such as ideal voltage source, voltage references, emitter followers, and voltage sources utilizing operational amplifiers."
+          },
+          {
+            "id": "14",
+            "outcome": "Express the characteristics of electronic current sources for the following: ideal current source; transistor current sources; common-emitter, cascode, and regulated cascode circuits; current sources utilizing operational amplifiers."
+          }
+        ],
+        "5": [
+          {
+            "id": "8",
+            "outcome": "  Contrast the Schottky, Zener, and variable capacitance diodes."
+          },
+          {
+            "id": "9",
+            "outcome": "  Design a single diode circuit and describe the significance of a load line."
+          },
+          {
+            "id": "10",
+            "outcome": "  Illustrate multidiode circuits such as rectifiers and direct current (DC) involving DC-DC voltage level converters."
+          },
+          {
+            "id": "11",
+            "outcome": "  Design a multidiode circuit including rectifiers."
+          },
+          {
+            "id": "12",
+            "outcome": "  Design a multidiode circuit including DC-DC voltage level converters."
+          },
+          {
+            "id": "13",
+            "outcome": "  Implement diode logic using only AND and OR functions."
+          },
+          {
+            "id": "14",
+            "outcome": "  Provide examples of bipolar transistors used in the construction of a range of common circuits."
+          }
+        ],
+        "7": [
+          {
+            "id": "4",
+            "outcome": "  Contrast the circuit properties of different kinds of non-volatile storage elements (e.g., flash memory, ROM)."
+          },
+          {
+            "id": "5",
+            "outcome": "  Derive timing diagrams showing the relationships among input, output, and clock signals for different storage devices."
+          }
+        ],
+        "9": [
+          {
+            "id": "3",
+            "outcome": "  Contrast the properties of non-ideal op-amps to include DC errors, common-mode rejection ratio (CMRR), input and output resistances, frequency response, output voltage, and current limitations."
+          },
+          {
+            "id": "4",
+            "outcome": "  Analyze and design simple circuits containing non-ideal op-amps."
+          },
+          {
+            "id": "5",
+            "outcome": "  Contrast and design multistage op-amp circuits."
+          }
+        ],
+        "10": [
+          {
+            "id": "6",
+            "outcome": "  Describe how D/A converter characteristics depend upon implementation; examples include weighted resistor, R/2R resistor ladders, weighted current source converters, and delta-sigma converters."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe how A/D converter characteristics depend upon implementation; examples include successive approximation converters, single and dual slope converters, flash converters, and delta-sigma converters."
+          },
+          {
+            "id": "8",
+            "outcome": "  Design A/D and D/A converters to meet given criteria using specified implementations."
+          }
+        ]
+      },
+      "SUPPLEMENTAL": {
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Calculate the effects of design parameters on switching energy, power-delay product, power dissipation, and noise margin."
+          },
+          {
+            "id": "2",
+            "outcome": "  Indicate issues associated with power supply distribution."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe sources of signal coupling and degradation, and their effects on circuit behavior."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast transmission line effects, particularly for passive, active, DC, and AC terminations."
+          },
+          {
+            "id": "5",
+            "outcome": "  Use appropriate design strategies and software tools for power distributions and transmission lines, incorporating element tolerances and tradeoffs."
+          },
+          {
+            "id": "6",
+            "outcome": "  Use appropriate design strategies and software tools to minimize noise and other signal degradations in designs."
+          },
+          {
+            "id": "7",
+            "outcome": "  Develop methods for worst-case analysis of circuits."
+          },
+          {
+            "id": "8",
+            "outcome": "  Explain Monte Carlo analysis and describe tools for using Monte Carlo analysis in circuit design."
+          },
+          {
+            "id": "9",
+            "outcome": "  Examine the use of six-sigma design methods for electronic circuits."
+          }
+        ],
+        "12": [
+          {
+            "id": "1",
+            "outcome": "  Predict the benefits and drawbacks associated with simulation as a method of circuit analysis."
+          },
+          {
+            "id": "2",
+            "outcome": "  Apply simulation methods for DC analysis, AC analysis, transient analysis, and steady-state analysis."
+          },
+          {
+            "id": "3",
+            "outcome": "  Identify aspects of circuits that are not readily amenable to simulation."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast methods and parameters for controlling simulation to include built-in device models, device parameter controls, and device and circuit libraries."
+          }
+        ]
+      }
+    }
+  },
+  "CE-CAL": {
+    "name": "Algorithms and Complexity",
+    "code": "CE-CAL",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Explain the role of algorithms in a hardware/software system."
+          },
+          {
+            "id": "2",
+            "outcome": "  Give examples of applications in which choice of algorithm is a significant design decision."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss the contributions of pioneers in the field."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain why theory is important."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Use library classes and the algorithms available in application code."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain how to find libraries to support applications of interest."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Use big O, omega, and theta notation to characterize asymptotic upper, lower, and tighter bounds on time and space complexity of algorithms."
+          },
+          {
+            "id": "2",
+            "outcome": "  Determine the time complexity and the space complexity of simple algorithms."
+          },
+          {
+            "id": "3",
+            "outcome": "  Measure the performance of an algorithm empirically."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain why time/space tradeoffs are important in computing systems."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Design and implement brute force algorithms."
+          },
+          {
+            "id": "2",
+            "outcome": "  Design and implement greedy algorithms."
+          },
+          {
+            "id": "3",
+            "outcome": "  Design and implement an algorithm using a divide and conquer strategy."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain how recursive algorithms work."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain why heuristics are useful and give examples of their use."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Describe algorithms historically used for searching and sorting."
+          },
+          {
+            "id": "2",
+            "outcome": "  Solve problems using efficient sorting algorithms."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain tradeoffs in choice of appropriate algorithm for common tasks."
+          },
+          {
+            "id": "4",
+            "outcome": "  Use abstract data types (such as hash tables and binary search trees) in applications involving search."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Identify characteristics of an application that influence algorithm choice."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain features of algorithms used in application domains such as control applications, mobile or location-aware applications, discrete event simulation applications or encryption/decryption algorithms."
+          },
+          {
+            "id": "3",
+            "outcome": "  Identify factors having impact on the performance of application-specific algorithms."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Analyze the parallelism inherent in a simple sequential algorithm."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain why communication and coordination are critical to ensure correctness."
+          },
+          {
+            "id": "3",
+            "outcome": "  Calculate the speedup attainable in theory and explain factors limiting attainable speedup."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain limitations to scalability."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss parallel algorithm structure and give examples."
+          },
+          {
+            "id": "6",
+            "outcome": "  Illustrate ways to manage algorithmic execution in multiple threads."
+          },
+          {
+            "id": "7",
+            "outcome": "  Select appropriate methods for measuring the performance of multithreaded algorithms."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Explain what it means for a problem to be NP-complete."
+          },
+          {
+            "id": "2",
+            "outcome": "  Give examples of NP-complete problems and explain why this is important."
+          },
+          {
+            "id": "3",
+            "outcome": "  Apply appropriate heuristics in the context of addressing intractable problems."
+          }
+        ]
+      },
+      "SUPPLEMENTAL": {
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Explain the underlying strategies in scheduling based on priority of the job, the length of the job, arrival time, and the impact of real time constraints."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain factors influencing the choice of a scheduling algorithm in an application."
+          },
+          {
+            "id": "3",
+            "outcome": "  Analyze the impact of the scheduling algorithm on system performance."
+          },
+          {
+            "id": "4",
+            "outcome": "  Illustrate the performance of a scheduling algorithm given a job set."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Illustrate and analyze system behavior using finite state machines."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain how regular expressions are related to finite state machines and why this is important."
+          },
+          {
+            "id": "3",
+            "outcome": "  Design a deterministic finite state machine to accept a simple language."
+          },
+          {
+            "id": "4",
+            "outcome": "  Generate a regular expression to represent a specified language."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain what a context free grammar is and why finite state machines do not recognize all context free languages."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain what an undecidable problem is."
+          },
+          {
+            "id": "7",
+            "outcome": "  Discuss what the halting problem is and why it is significant."
+          }
+        ]
+      }
+    }
+  },
+  "CE-CAO": {
+    "name": "Computer Architecture and Organization",
+    "code": "CE-CAO",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Identify some contributors to computer architecture and organization and relate their achievements to the knowledge area."
+          },
+          {
+            "id": "2",
+            "outcome": "  Articulate differences between computer organization and computer architecture."
+          },
+          {
+            "id": "3",
+            "outcome": "  Sketch a block diagram showing the main components of a simple computer."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the reasons and strategies for different computer architectures and indicate some strengths and weaknesses inherent in each."
+          },
+          {
+            "id": "5",
+            "outcome": "  Identify some modern techniques for high-performance computing, such as multi/many-core and distributed architectures."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Identify tools to simulate computer systems at different levels of design abstraction: system, instruction set processor (ISP), register-transfer language (RTL), and gate level."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss the type of information contained in one or more component interconnect standards."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss how architecture design choices and tradeoffs influence important consequences such as performance and power."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Explain the organization of a von Neumann machine and its major functional units."
+          },
+          {
+            "id": "2",
+            "outcome": "  Illustrate how a computer fetches from memory, decodes, and executes an instruction."
+          },
+          {
+            "id": "3",
+            "outcome": "  Articulate the strengths and weaknesses of the von Neumann architecture, compared to a Harvard or other architecture."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe the primary types of computer instructions, operands, and addressing modes."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain the relationship between the encoding of machine-level operations at the binary level and their representation in a symbolic assembly language."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain different instruction format options, such as the number of addresses per instruction and variable-length versus fixed-length formats."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe reduced (RISC) vs complex (CISC) instruction set computer architectures."
+          },
+          {
+            "id": "8",
+            "outcome": "  Write small assembly language programs to demonstrate an understanding of machine-level operations."
+          },
+          {
+            "id": "9",
+            "outcome": "  Implement some fundamental high-level programming constructs at the assembly-language level, including control flow structures such as subroutines and procedure calls."
+          },
+          {
+            "id": "10",
+            "outcome": "  Write small assembly language programs to access simple input/output devices using program-controlled and interrupt-driven methods."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  List the factors that contribute to computer performance."
+          },
+          {
+            "id": "2",
+            "outcome": "  Articulate the rationale for and limitations of commonly used computer performance metrics, such as clock rate, MIPS, cycles per instruction, throughput, and bandwidth."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe the rationale for and limitations of benchmark programs."
+          },
+          {
+            "id": "4",
+            "outcome": "  Name and describe two commonly used benchmarks for measuring computer performance, and contrast two different computer systems using published benchmark results."
+          },
+          {
+            "id": "5",
+            "outcome": "  Select the most appropriate performance metrics and/or benchmarks for evaluating a given computer system, for a target application."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain the role of Amdahl’s law in computer performance and the ways control and data path design can affect performance."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "Determine the characteristics of commonly used number systems such as range, precision, accuracy, and conditions that lead to arithmetic overflow and underflow, and tradeoffs between characteristics of different number systems."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the limitations of computer arithmetic and the effects of errors on calculations."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe basic arithmetic algorithms for addition, subtraction, multiplication, and division of integer binary numbers."
+          },
+          {
+            "id": "4",
+            "outcome": "  Convert numbers to and from the formats specified by the IEEE 754 standard for floating-point arithmetic."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe algorithms for addition, subtraction, multiplication, and division of floating-point numbers."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe how multi-precision arithmetic is performed in a computer system."
+          },
+          {
+            "id": "7",
+            "outcome": "  Discuss the effect of a processor’s arithmetic unit on its overall performance."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Discuss the relationship between instruction set architecture and processor organization."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast tradeoffs between alternative implementations of datapaths for a Von Neumann machine."
+          },
+          {
+            "id": "3",
+            "outcome": "  Design a datapath and a hard-wired control unit for a simple instruction set architecture."
+          },
+          {
+            "id": "4",
+            "outcome": "  Design arithmetic units for multiplication, division, and floating-point arithmetic."
+          },
+          {
+            "id": "5",
+            "outcome": "Explain basic instruction-level parallelism (ILP) using pipelining, the effect of pipelining on performance, and the major hazards that may occur, including performance penalties resulting from hazards."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain the steps needed to mitigate the effect of pipeline hazards caused by branches."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe common exception and interrupt handling mechanisms used in computer systems."
+          },
+          {
+            "id": "8",
+            "outcome": "  Describe the characteristics of superscalar architectures, including multi-issue operation, and in-order and out-of-order execution."
+          },
+          {
+            "id": "9",
+            "outcome": "  Describe how each of the functional parts of a computer system affects its overall performance."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Identify the main types of memory technologies presently in use."
+          },
+          {
+            "id": "2",
+            "outcome": "  Design a main memory with specified parameters using given memory devices."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss how memory performance metrics, such as latency, cycle time, bandwidth, and interleaving, are used to measure the effects of memory on overall system performance."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the use of memory hierarchy to reduce the effective memory latency in a system."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe common cache memory organizations, explain the use of cache memory to improve performance, and discuss cost-performance tradeoffs of different cache organizations."
+          },
+          {
+            "id": "6",
+            "outcome": "  Illustrate mechanisms used to provide cache coherence, invalidation/snooping, and shared/exclusive access control."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe the principles of memory management and virtual memory systems."
+          },
+          {
+            "id": "8",
+            "outcome": "  Describe characteristics of current secondary storage technologies, such as magnetic, optical, and solid-state drives."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Draw a block diagram showing how a processor interacts with input/output (I/O) devices, including peripheral addressing (isolated vs memory-mapped) handshaking, and buffering."
+          },
+          {
+            "id": "2",
+            "outcome": "Explain the use of interrupts to implement I/O control and data transfers, including vectored and prioritized interrupts, and discuss factors that contribute to interrupt overhead and latency."
+          },
+          {
+            "id": "3",
+            "outcome": "  Write small interrupt service routines and I/O drivers using assembly language."
+          },
+          {
+            "id": "4",
+            "outcome": "  Illustrate the use of direct memory access (DMA) to interact with IO devices."
+          },
+          {
+            "id": "5",
+            "outcome": "  Determine tradeoffs between program-controlled IO, interrupt-driven IO, and DMA for a given application."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe the characteristics of a parallel bus, including data transfer protocols."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe characteristics of asynchronous and synchronous serial communication protocols."
+          },
+          {
+            "id": "8",
+            "outcome": "  Discuss tradeoffs between parallel and serial data transmission between devices."
+          }
+        ],
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Contrast the characteristics of one or more computer system expansion buses."
+          },
+          {
+            "id": "2",
+            "outcome": "  Select an appropriate bus for connecting given components/subsystems to a computer system."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe data access from a secondary storage device such as a magnetic or solid-state disk drive."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain how storage subsystem interface / controllers function."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain how display subsystems and controllers function."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe other input and output device subsystems (e.g., keyboard, mouse, audio)."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe communication subsystems: network controllers, and serial and parallel communication functions."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Discuss the performance limitations of single-core processors due to clock-frequency and power walls."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the basic organization of a multi/many-core, shared memory processor."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss the benefits of homogeneous vs heterogeneous multi/many-core architectures, and tradeoffs between different architectures."
+          },
+          {
+            "id": "4",
+            "outcome": "  Discuss on-chip interconnect networks and memory controller issues."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe how programs are partitioned for execution on multi/many-core processors."
+          },
+          {
+            "id": "6",
+            "outcome": "  Articulate current programming techniques, models, frameworks, and languages for multi/many-core processors."
+          }
+        ],
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Explain the differences and tradeoffs between various distributed system paradigms."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain the impact of granularity and levels of parallelism in distributed systems, including threads, thread-level parallelism and multithreading."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe the topology, degrees of coupling, and other characteristics of several current multiprocessor/multicomputer architectures."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe how the client-server model works in a decentralized fashion."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain how agents work and how they solve simple tasks."
+          },
+          {
+            "id": "6",
+            "outcome": "  Articulate current programming techniques, models, frameworks, and languages for distributed, parallel processing."
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "2": [
+          {
+            "id": "4",
+            "outcome": "  Contrast two hardware description languages, such as VHDL and Verilog."
+          }
+        ],
+        "3": [
+          {
+            "id": "11",
+            "outcome": "  Describe features and applications of short-vector instruction sets: Streaming extensions, AltiVec, relationship between computer architecture and multimedia applications."
+          }
+        ],
+        "5": [
+          {
+            "id": "8",
+            "outcome": "  Describe algorithms for higher-complexity functions, such as square roots and transcendental functions."
+          },
+          {
+            "id": "9",
+            "outcome": "  Describe saturating arithmetic operations and discuss some applications in which saturating arithmetic would be useful."
+          }
+        ],
+        "6": [
+          {
+            "id": "10",
+            "outcome": "  Discuss the way in which instruction sets have evolved to improve performance—for example, predicated/speculative execution and SIMD support."
+          },
+          {
+            "id": "11",
+            "outcome": "  Discuss frequency and power scaling issues and their tradeoffs for processor design."
+          },
+          {
+            "id": "12",
+            "outcome": "  Discuss how accelerators (e.g., GPUs, DSPs, FPGAs) can be used to improve performance."
+          },
+          {
+            "id": "13",
+            "outcome": "  Discuss how to apply parallel processing approaches to design scalar and superscalar processors."
+          },
+          {
+            "id": "14",
+            "outcome": "  Discuss how to apply vector processing techniques to enhance instruction sets for multimedia and signal processing."
+          }
+        ],
+        "7": [
+          {
+            "id": "9",
+            "outcome": "  Understand how errors in memory systems arise, and illustrate several mechanisms used to resolve them, such as error detecting and error correcting systems, and RAID structures."
+          }
+        ],
+        "11": [
+          {
+            "id": "7",
+            "outcome": "  Describe modern implementations of the client-server model, such as cloud-based computing."
+          },
+          {
+            "id": "8",
+            "outcome": "  Describe the concept of logical clocks versus physical clocks and show how they affect implementation of distributed systems."
+          },
+          {
+            "id": "9",
+            "outcome": "  Contrast simple election and mutual exclusion algorithms and their applicability."
+          },
+          {
+            "id": "10",
+            "outcome": "  Describe approaches to design for parallelism, synchronization, thread safety, concurrent data structures."
+          },
+          {
+            "id": "11",
+            "outcome": "  Discuss distributed transaction models, classification, and concurrency control."
+          }
+        ]
+      }
+    }
+  },
+  "CE-DIG": {
+    "name": "Digital Design",
+    "code": "CE-DIG",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Identify some early contributors to digital design and relate their achievements to the knowledge area."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss applications in computer engineering that benefit from the area of digital design."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe how Boolean logic relates to digital design."
+          },
+          {
+            "id": "4",
+            "outcome": "  Enumerate key components of digital design such as combinational gates, memory elements, and arithmetic blocks."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Describe design tools and tool flow (e.g., design entry, compilation, simulation, and analysis) that are useful for the creation and simulation of digital circuits and systems."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss the need for standards and enumerate standards important to the area of digital design such as floating-point numbers (IEEE 754) and character encoding (ASCII, Unicode)"
+          },
+          {
+            "id": "3",
+            "outcome": "  Use one of the standard HDLs (e.g., IEEE 1364/Verilog, IEEE 1076/VHDL) for modeling simple digital circuits."
+          },
+          {
+            "id": "4",
+            "outcome": "  Define important engineering constraints such as timing, performance, power, size, weight, cost, and their tradeoffs in the context of digital systems design."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Convert signed/unsigned, integer/fixed-point decimal numbers to/from binary/hex representations."
+          },
+          {
+            "id": "2",
+            "outcome": "  Perform integer/fixed-point addition/subtraction using binary/hex number representations."
+          },
+          {
+            "id": "3",
+            "outcome": "  Define precision and overflow for integer/fixed-point, signed/unsigned, addition/subtraction operations."
+          },
+          {
+            "id": "4",
+            "outcome": "  Encode/decode character strings using ASCII and Unicode standards."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Define basic (AND, OR, NOT) and derived (e.g., NAND, NOR, XOR) Boolean operations."
+          },
+          {
+            "id": "2",
+            "outcome": "  Enumerate Boolean algebra laws and theorems."
+          },
+          {
+            "id": "3",
+            "outcome": "  Use basic and derived Boolean operations to evaluate Boolean expressions."
+          },
+          {
+            "id": "4",
+            "outcome": "  Write and simplify Boolean expressions by applying appropriate laws and theorems and other techniques (e.g., Karnaugh maps)."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Describe electrical representations of TRUE/FALSE."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe physical logic gate implementations of basic (AND, OR, NOT) and derived (e.g., NAND, NOR, XOR) Boolean operations."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe the high-impedance condition and logic gate implementation such as a tri-state buffer."
+          },
+          {
+            "id": "4",
+            "outcome": "  Implement Boolean expressions using the two-level gate forms of AND-OR, OR-AND, NAND-NAND, NOR-NOR and positive/negative/mixed-logic conventions."
+          },
+          {
+            "id": "5",
+            "outcome": "  Implement Boolean expressions using multiple gating levels and positive/negative/mixed-logic conventions."
+          },
+          {
+            "id": "6",
+            "outcome": "  Discuss the physical properties of logic gates such as fan-in, fan-out, propagation delay, power consumption, logic voltage levels, and noise margin and their impact on the constraints and tradeoffs of a design."
+          },
+          {
+            "id": "7",
+            "outcome": "  Explain the need for a hardware description language (HDL) in digital system design."
+          },
+          {
+            "id": "8",
+            "outcome": "  Describe the logic synthesis process that transforms an HDL description into a physical implementation."
+          },
+          {
+            "id": "9",
+            "outcome": "  Implement combinational networks using an HDL and generate/verify using appropriate design tools."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Describe and design single-bit/multi-bit structure/operation of combinational building blocks such as multiplexers, demultiplexers, decoders, and encoders."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe and design the structure/operation of arithmetic building blocks such adders (ripple-carry), subtractor, shifters, and comparators."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe and design structures for improving adder performance such as carry lookahead and carry select."
+          },
+          {
+            "id": "4",
+            "outcome": "  Analyze and design combinational circuits (e.g., arithmetic logic unit, ALU) in a hierarchical, modular manner, using standard and custom combinational building blocks."
+          },
+          {
+            "id": "5",
+            "outcome": "  Implement combinational building blocks and modular circuits using an HDL and generate/verify using appropriate design tools."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Define a clock signal using period, frequency, and duty-cycle parameters."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain the structure/operation of basic latches (D, SR) and flip-flops (D, JK, T)."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe propagation delay, setup time, and hold time for basic latches and flip-flops."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe and design the structure/operation of sequential building blocks such as registers, counters, and shift registers."
+          },
+          {
+            "id": "5",
+            "outcome": "  Analyze and create timing diagrams for sequential block operation."
+          },
+          {
+            "id": "6",
+            "outcome": "  Enumerate design tradeoffs in using different types of basic storage elements for sequential building block implementation."
+          },
+          {
+            "id": "7",
+            "outcome": "  Implement sequential building blocks using an HDL and generate/verify using appropriate design tools."
+          },
+          {
+            "id": "8",
+            "outcome": "  Describe the characteristics of static memory types such static SRAM, ROM, and EEPROM."
+          },
+          {
+            "id": "9",
+            "outcome": "  Describe the characteristics of dynamic memories."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Describe a digital system that is partitioned into control+datapath and explain the need for control to sequence operations on a datapath."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast the different types of Finite State Machines (FSMs): e.g., Mealy State Machine, Moore State Machine, and Algorithmic State Machine (ASM)."
+          },
+          {
+            "id": "3",
+            "outcome": "  Represent FSM operation graphically using a state diagram (e.g., Mealy state diagram, Moore state diagram, or ASM chart)."
+          },
+          {
+            "id": "4",
+            "outcome": "  Analyze state diagrams and create timing diagrams for FSM operation."
+          },
+          {
+            "id": "5",
+            "outcome": "  Compute timing parameters such as maximum operating frequency, setup/hold time of synchronous inputs, clock-to-out propagation delays, pin-to-pin propagate delay for a control+datapath design."
+          },
+          {
+            "id": "6",
+            "outcome": "  Design an RTL model of a control+datapath using a HDL and synthesize/verify using appropriate design tools."
+          }
+        ],
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Describe basic elements of programmable logic such as lookup tables (LUTs), AND/OR plane programmable logic, programmable mux logic, and programmable routing."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss programmable logic architectures such as Field Programmable Gate Arrays (FPGAs) and Complex Programmable Logic Devices (CPLDs)."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe common features of programmable logic architectures such as hard macros (e.g., adders, multipliers, SRAMs), clock generation support (e.g., PLLs, multiple clock networks), and support for different logic standards."
+          },
+          {
+            "id": "4",
+            "outcome": "  Implement a digital system in an FPGA or CPLD and describe and evaluate tradeoffs for implementation characteristics such as programmable logic resources that are used, maximum clock frequency, setup/hold times for external inputs, and clock-to-out delay."
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "7": [
+          {
+            "id": "10",
+            "outcome": "  Describe techniques (e.g., handshaking) of asynchronous design, and discuss their advantages (e.g., performance/power in some cases) and design issues (e.g., hazards such as race conditions, lack of tool support)."
+          },
+          {
+            "id": "11",
+            "outcome": "  Describe the characteristics of advanced memory technologies such as multi-port memories, double data rate (DDR) memories, and hybrid memories (e.g., hybrid memory cube, HMC)."
+          }
+        ],
+        "8": [
+          {
+            "id": "7",
+            "outcome": "  Discuss clock generation, clock distribution, clock skew in relationship to a control+datapath design."
+          },
+          {
+            "id": "8",
+            "outcome": "  Use pipelining to improve the performance of a control+datapath design."
+          },
+          {
+            "id": "9",
+            "outcome": "  Discuss applications that require serialization/de-serialization of bit streams, and implement a design that performs serialization/de-serialization."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Describe advanced features of programmable logic architectures in the form of hard macros such as CPUs, high-speed serial transceivers, and support for other transceiver standards (e.g., PCI Express, Ethernet PCS)."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast top-down versus bottom-up design methodologies for system design."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe how to use logic synthesis timing constraints with an appropriate design tool for affecting logic generated for a control+datapath implementation."
+          },
+          {
+            "id": "4",
+            "outcome": "  Use constraints of clock-cycle latency and clock-cycle throughput to create alternate designs for a digital system."
+          },
+          {
+            "id": "5",
+            "outcome": "  Use other appropriate design tools (e.g., power estimator) for design space exploration and tradeoffs based on constraints such as performance, power, and cost."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe the role of testability as a system design constraint and different approaches and tools for improving testability."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe features/architecture of the JTAG standard and its role in digital systems testing."
+          },
+          {
+            "id": "8",
+            "outcome": "  Create an HDL-based self-checking behavioral test bench for a digital system design."
+          }
+        ],
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Explain the need for systematic testing methods in digital design."
+          },
+          {
+            "id": "2",
+            "outcome": "  Define fault models such as stuck-at, bridging, and delay."
+          },
+          {
+            "id": "3",
+            "outcome": "  Define the terms controllability, observability, test coverage, and test generation when designing a method for testing a digital system."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe design for testability methods such as ad-hoc, full-scan/partial scan and built-in-self-test (BIST)."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe the role of computer-aided testing tools for digital systems testing."
+          }
+        ]
+      }
+    }
+  },
+  "CE-ESY": {
+    "name": "Embedded Systems",
+    "code": "CE-ESY",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Identify some contributors to embedded systems and relate their achievements to the knowledge area."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the characteristics of an embedded system and its role in several example applications."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain the reasons for the importance of embedded systems."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe the relationship between programming languages and embedded systems."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe how computer engineering uses or benefits from embedded systems."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Use an integrated development environment (IDE) to write, compile and/or assemble, and debug a program (high-level or assembly language) for a target embedded system."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast instrumentation choices for diagnosing/understanding hardware aspects of embedded systems behavior."
+          },
+          {
+            "id": "3",
+            "outcome": "  List several standards applicable to embedded such as signaling levels and serial communication protocols."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Contrast CPUs used for embedded systems versus those used for general purpose computing."
+          },
+          {
+            "id": "2",
+            "outcome": "  Evaluate and rank tradeoffs such as cost, power, and performance for different embedded systems applications."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe architectural features of the target embedded system(s) (register structure, memory architecture, CPU features, peripheral subsystems)."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast the different types of processors for embedded systems: CPU microcontrollers, DSP processors, GPUs, heterogeneous SOCs (CPUs/accelerators), FPGA-based processors."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Manually translate simple high-level language statements to equivalent assembly language."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the actions of compilation, assembly, linking in the program translation process."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe actions taken by compiler-generated code after system reset but before user application execution."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe memory assignments made by a compiler for global variables, local variables, subroutine parameters and dynamically allocated storage."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain the basic loop-forever structure of an embedded program."
+          },
+          {
+            "id": "6",
+            "outcome": "  Design simple programs for embedded system applications including some that include modular/hierarchical programming techniques such as subroutines and functions."
+          },
+          {
+            "id": "7",
+            "outcome": "  Demonstrate debugging techniques for simple embedded application programs."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Describe the appropriateness of different I/O configurations (input, strong drive, weak pullup/pulldown, open-drain, tri-state) available in general purpose I/O (GPIO) for a given target application."
+          },
+          {
+            "id": "2",
+            "outcome": "  Create programs that perform a set of input/output operations on one more GPIOs using a polled approach."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe how interrupts are supported on the target embedded system(s)."
+          },
+          {
+            "id": "4",
+            "outcome": "  Create programs that perform a sequence of input/output operations on one more GPIOs using an interrupt-driven approach."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss mechanisms such as hardware and software FIFOs for buffering data streams."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Discuss the concepts of full-duplex and half-duplex communication."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast parallel I/O versus serial I/O tradeoffs in terms of throughput, wiring cost, and application."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe the data formatting, timing diagrams, and signaling levels used in an asynchronous serial interface."
+          },
+          {
+            "id": "4",
+            "outcome": "  Create programs that perform I/O to an external device or system that uses an asynchronous serial interface."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe the data formatting, timing diagrams, and signaling levels used in a synchronous serial interface such as SPI or I2C."
+          },
+          {
+            "id": "6",
+            "outcome": "  Create programs that perform I/O to an external device or system that uses a synchronous serial interface such as SPI or I2C."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Describe the basic features and operation of typical hardware timers used in embedded systems."
+          },
+          {
+            "id": "2",
+            "outcome": "  Create programs that perform periodic I/O triggered by hardware timer-generated interrupts."
+          },
+          {
+            "id": "3",
+            "outcome": "  Create programs that measure waveform characteristics such as pulse width and frequency using hardware timers."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe applications of pulse width modulation."
+          },
+          {
+            "id": "5",
+            "outcome": "  Create programs that use pulse width modulation for external device control."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Describe terms and properties relating to Analog-to-Digital Conversion (ADC) and Digital-to-Analog Conversion (DAC) such as sampling rate, reference voltage, conversion time, precision, range, and encoding method."
+          },
+          {
+            "id": "2",
+            "outcome": "  Perform voltage to binary and binary to voltage numerical conversions given range, encoding method, and reference voltage parameters."
+          },
+          {
+            "id": "3",
+            "outcome": "Describe DAC and ADC architectural approaches such as resistor ladder, successive approximation, flash, and delta-sigma, and give tradeoffs such as conversion time and circuit complexity."
+          },
+          {
+            "id": "4",
+            "outcome": "  Demonstrate numerical conversion from a physical quantity such as pressure, temperature, and acceleration to voltage or current given an example sensor and its characteristic equation or graph."
+          },
+          {
+            "id": "5",
+            "outcome": "  Create programs that use one or more external sensors for monitoring physical properties."
+          },
+          {
+            "id": "6",
+            "outcome": "  Demonstrate numerical conversion from voltage or current to a physical quantity such as linear/angular movement, sound, and light given an example actuator and its characteristic equation or lookup-up table."
+          },
+          {
+            "id": "7",
+            "outcome": "  Create programs that use one or more actuators for effecting physical control by an embedded system."
+          },
+          {
+            "id": "8",
+            "outcome": "  Design circuitry that transforms voltage level/current drive from/to external sensors/actuators to that required/provided by a target CPU."
+          }
+        ],
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Describe the need for structured approaches in writing complex embedded applications."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe techniques used in event-driven state machine frameworks such as events, event queues, active objects, event processing, priority queues, and hierarchical state machines."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe techniques used in real time operating systems (RTOS) such as message passing, preemptive versus cooperative scheduling, semaphores, queues, tasks, co-routines, and mutexes."
+          },
+          {
+            "id": "4",
+            "outcome": "  Create programs using either a state machine framework or an RTOS (or both) for sample embedded system applications."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Describe sources of energy consumption such as toggling, leakage and pin configurations used for minimizing power."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe power saving approaches used in embedded system design and their corresponding performance/power tradeoffs such as sleep/hibernate modes, peripheral system enable/disable, and clock frequency management, and appropriate GPIO configurations during sleep/hibernate."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe wakeup mechanisms such as watchdog timer, real time clock, and external interrupts."
+          },
+          {
+            "id": "4",
+            "outcome": "  Write programs that demonstrate minimal energy usage in performing I/O tasks through use of sleep and/or hibernate modes."
+          },
+          {
+            "id": "5",
+            "outcome": "  Compute system battery life for an embedded system platform given parameters such as battery capacity, current draw, wake time, sleep time, clock frequency."
+          }
+        ],
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Describe the role of embedded systems in the ‘internet of things.’"
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss options for adding short-range wireless connectivity to an embedded system such as Bluetooth and 802.15.4 and tradeoffs relating to cost, power, throughput, and connectivity."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss options for adding long-range wireless connectivity to an embedded system such as cellular and Ethernet and tradeoffs relating to cost, power, throughput, and connectivity."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast hardware options for adding wireless connectivity to an embedded system such as external smart modules or software stack- plus-radio integrated circuits."
+          },
+          {
+            "id": "5",
+            "outcome": "  Contrast connectivity architectures such as point-to-point, star, and mesh."
+          },
+          {
+            "id": "6",
+            "outcome": "  Discuss security options for protecting wireless communication links."
+          }
+        ],
+        "12": [
+          {
+            "id": "1",
+            "outcome": "  Discuss concepts used in I/O buses such as master/slave devices, arbitration, transactions, priorities, and packets."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast single-ended signaling versus differential signaling for use in high-speed serial busses, and methods for measuring differential signaling quality such as eye-diagrams."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe features such as topology, signaling levels, arbitration, speed, packet structure, and data transfers for one or more advanced serial bus protocols such as the Controller Area Network, Universal Serial Bus, and IEEE 1394 (FireWire)."
+          },
+          {
+            "id": "4",
+            "outcome": "  Discuss architectures and applications of persistent storage for embedded systems, such as flash drives, SD cards, and FRAM."
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "5": [
+          {
+            "id": "6",
+            "outcome": "  Discuss Direct Memory Access (DMA) and describe how it is supported on the target embedded system."
+          },
+          {
+            "id": "7",
+            "outcome": "  Create programs that perform a sequence of input/output operations using DMA."
+          }
+        ],
+        "13": [
+          {
+            "id": "1",
+            "outcome": "  Describe multimedia peripherals found in advanced embedded System-On-Chip implementations such video encoding, audio processing, display processing."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe interconnect and networking options for SoCs, including Network-on-Chip architectures."
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast performance, power, and flexibility tradeoffs for hard core versus software CPUs found in Field Programmable Gate Arrays."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe embedded applications that benefit from a multi-core approach."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe embedded applications that benefit from other types of processors for embedded systems: DSP processors, GPUs, heterogeneous SOCs (CPUs/accelerators), FPGA-based processors."
+          }
+        ]
+      }
+    }
+  },
+  "CE-NWK": {
+    "name": "Networking",
+    "code": "CE-NWK",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Describe the origins and development history of computer networks."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain important applications of computer network."
+          },
+          {
+            "id": "3",
+            "outcome": "  Identify people who made important contributions to networks and specify the contributions they made."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the basic composition and hierarchy of computer network."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss the role of hierarchy in computer network construction."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain the main protocols and the key technologies related to computer networks."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Describe the broad taxonomy of wireless standards such as cellular network standards vs. 802 family standards."
+          },
+          {
+            "id": "2",
+            "outcome": "  Provide an overview of the IEEE 802 family standards including IEEE802.3, 802.11, 802.15, and 802.16."
+          },
+          {
+            "id": "3",
+            "outcome": "  Provide an overview of cellular network standards including 2G, 3G, 3.5G, 4G, 5G, and LTE."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the Bluetooth wireless technology standard."
+          },
+          {
+            "id": "5",
+            "outcome": "  Contrast functions and basic usages of a modern network simulator."
+          },
+          {
+            "id": "6",
+            "outcome": "  Discuss constraints of the development of computer networks, such as transmission media, network security and network management"
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  State the fundamental concepts of networks and their topologies."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast network architectures with the network’s hardware components."
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast the elements of a protocol with the concept of layering."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the importance of networking standards and their regulatory committees."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe the seven layers of the OSI model."
+          },
+          {
+            "id": "6",
+            "outcome": "  Define the role of networking and internetworking devices such as repeaters, bridges, switches, routers, and gateways."
+          },
+          {
+            "id": "7",
+            "outcome": "  Explains the pros and cons of network topologies such as mesh, star, tree, bus, ring, and 3-D torus."
+          },
+          {
+            "id": "8",
+            "outcome": "  Describe the TCP/IP model."
+          },
+          {
+            "id": "9",
+            "outcome": "  Contrast the TCP/IP model with the OSI model."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Explain the basic concepts of LAN, MAN, and WAN technologies, topologies, and associated tradeoffs."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the use of network technologies for on-chip interconnect networks such as Network-on-Chip (NoC) architectures."
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast different components and requirements of network protocols with their tradeoffs."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the functions of the physical layer and describe features of different transmission media and technologies."
+          },
+          {
+            "id": "5",
+            "outcome": "  Articulate the basic concepts of error detection and correction at the data-link layer."
+          },
+          {
+            "id": "6",
+            "outcome": "  Contrast circuit and packet switching"
+          },
+          {
+            "id": "7",
+            "outcome": "  Explain the access and control methods of common shared media."
+          },
+          {
+            "id": "8",
+            "outcome": "  Contrast key innovations of Ethernet and Gigabit Ethernet."
+          },
+          {
+            "id": "9",
+            "outcome": "  Explain the key concepts of carrier-sense multiple-access networks (CSMA)."
+          },
+          {
+            "id": "10",
+            "outcome": "  Explain how to build a simple network using a network protocol that operates at the physical and data-link layers of the OSI model."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Explain the source of changes in the wireless and mobile industry from the view point of new service models such as the mobile ecosystem (e.g Apple and Android ecosystems)"
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the fundamental components that tend to be unchanged for long periods such as mobile IP, Wi-Fi, and cellular."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain the potential issues in wireless media access such as the hidden terminal problem and the exposed terminal problem."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the basics of a Wi-Fi network such as protocol stack and frame structure as well as its development such as IEEE802.11 a/b/g/n series standards."
+          },
+          {
+            "id": "5",
+            "outcome": "  Contrast the basic concepts in cellular network such network architecture, framework, and LTE."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe the main characteristics of mobile IP and explain how it differs from standard IP regarding mobility management and location management; illustrate how traffic is routed using mobile IP."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe features of typical wireless MAC protocols."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Contrast connection-oriented and connectionless services."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast network protocols in dimensions related to their syntax, semantics, and timing."
+          },
+          {
+            "id": "3",
+            "outcome": "  Define the role of key layers from a software stack including physical-layer networking concepts, data-link layer concepts, interworking, and routing."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain some common protocol suites and the services they provide (e.g., IPv4, IPv6, and TCP/UDP)."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe the functions of the network layer and networking technology."
+          },
+          {
+            "id": "6",
+            "outcome": "  Contrast different network architectures."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe the important technologies used in routers."
+          },
+          {
+            "id": "8",
+            "outcome": "  Contrast at least two important routing algorithms."
+          },
+          {
+            "id": "9",
+            "outcome": "  Explain congestion control and contrast its related algorithms."
+          },
+          {
+            "id": "10",
+            "outcome": "  Describe main contents of the IP, TCP and UDP protocols."
+          },
+          {
+            "id": "11",
+            "outcome": "  Explain the role of the Domain Name System (DNS) and the benefits of its distributed design."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Describe the key components of a web solution stack using LAMP (Linux, Apache HTTP server, MySQL, PHP/Perl/Python) or other similar illustrative examples"
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain the different roles and responsibilities of clients and servers for a range of possible applications."
+          },
+          {
+            "id": "3",
+            "outcome": "  Select a range of tools that ensures an efficient approach to implementing various client-server possibilities."
+          },
+          {
+            "id": "4",
+            "outcome": "  Design and build a simple interactive web-based application (for example, a simple web form that collects information from the client and stores it in a file on the server."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss web software stack technologies such as LAMP solution stack."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain characteristics of web servers such as handling permissions, file management, and capabilities of common server architectures."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe support tools for website creation and web management."
+          },
+          {
+            "id": "8",
+            "outcome": "  Describe at a high level, ways in which a wide variety of clients and server software interoperates to provide e-mail services worldwide."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Discuss the possible objectives and main instruments for network management."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the role of a domain name server (DNS) in distributed network management."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe common network management protocols such as ICMP, and SNMP."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast three main issues related to network management."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss four typical architectures for network management including the management console, aggregators, and device agents."
+          },
+          {
+            "id": "6",
+            "outcome": "  Demonstrate the management of a device such as an enterprise switch through a management console."
+          },
+          {
+            "id": "7",
+            "outcome": "  Contrast various network management techniques as they apply to wired and wireless networks such as topics on devices, users, quality of service, development, and configuration of these technologies."
+          },
+          {
+            "id": "8",
+            "outcome": "  Discuss the address resolution protocol (ARP) for associating IP addresses with MAC addresses."
+          },
+          {
+            "id": "9",
+            "outcome": "  Explain two quality of service issues such as performance and failure recovery."
+          },
+          {
+            "id": "10",
+            "outcome": "  Describe ad hoc networks."
+          },
+          {
+            "id": "11",
+            "outcome": "  Explain troubleshooting principles and techniques related to networks."
+          },
+          {
+            "id": "12",
+            "outcome": "  Describe management functional areas related to networks."
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "4": [
+          {
+            "id": "11",
+            "outcome": "  Describe protocols for addressing and congestion control."
+          },
+          {
+            "id": "12",
+            "outcome": "  Describe protocols for virtual circuits and quality of service."
+          }
+        ],
+        "5": [
+          {
+            "id": "8",
+            "outcome": "  Explain wireless CSMA/CA and RTS/CTS enhancement mechanisms."
+          }
+        ],
+        "7": [
+          {
+            "id": "9",
+            "outcome": "  Implement solutions using dynamic HTML and client- and server-side models for web applications."
+          },
+          {
+            "id": "10",
+            "outcome": "  Give examples of and state advantages and disadvantages of peer-to-peer models."
+          },
+          {
+            "id": "11",
+            "outcome": "  Explain the principles, advantages, and challenges of cloud computing."
+          },
+          {
+            "id": "12",
+            "outcome": "  Give examples of cloud computing APIs or commercial services and summarize the key abilities they provide."
+          },
+          {
+            "id": "13",
+            "outcome": "  Describe the key components and tradeoffs of a modern network application that requires a hybrid of many areas with computer networks such as machine learning, daa mining, HCI, and transportation systems."
+          }
+        ],
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Define the fundamental concepts of data communications."
+          },
+          {
+            "id": "2",
+            "outcome": "  Apply signals and signal encoding methods to communication service methods and data-transmission modes."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain the role of modulation in data communication."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast the issues involved with A/D and D/A conversion in data communications."
+          },
+          {
+            "id": "5",
+            "outcome": "  Contrast communication hardware interfaces such as modems."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain various approaches to multiplexing."
+          },
+          {
+            "id": "7",
+            "outcome": "  Explain the basic theory of error detecting and correcting codes and provide an example."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Describe performance metrics."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast how different performance metrics affect a specific network and/or service paradigm."
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast service paradigms such as connection-oriented service and connectionless service."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast network performance characteristics including latency and throughput."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss network error sources such as dropped packets and corrupted data."
+          },
+          {
+            "id": "6",
+            "outcome": "  Define a “quality of experience” metric (QoE, QoX or simply QX), which is a measure of a customer's experiences with a service (e.g., web browsing, phone call, TV broadcast, call to a call center.)"
+          },
+          {
+            "id": "7",
+            "outcome": "  Apply fundamental modeling theory to analyze the performance of a network (e.g., a M/M/1 queue)."
+          }
+        ],
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Describe the features of wireless sensor network (WSN) systems."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the MAC and routing protocols of WSNs."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss the requirements and strategies of WSN data fusion."
+          },
+          {
+            "id": "4",
+            "outcome": "  Provide an example of a real application of WSNs."
+          },
+          {
+            "id": "5",
+            "outcome": "  Contrast circuit switching vs packet switching: virtual circuit switching (MPLS)."
+          }
+        ]
+      }
+    }
+  },
+  "CE-PPP": {
+    "name": "Professional Practice",
+    "code": "CE-PPP",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Describe the nature of professionalism and its place in the field of computer engineering."
+          },
+          {
+            "id": "2",
+            "outcome": "  Identify some contributors and relate their achievements to social and professional issues."
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast ethical and legal issues as related to computer engineering."
+          },
+          {
+            "id": "4",
+            "outcome": "  Indicate reasons for studying social and professional issues."
+          },
+          {
+            "id": "5",
+            "outcome": "  Identify stakeholders in an issue and an engineer’s obligations to them."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain professionalism and licensure relative to a practicing computer engineer."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe how computer engineering uses or benefits from social and professional issues."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Interpret the social context of a specific implementation."
+          },
+          {
+            "id": "2",
+            "outcome": "  Identify non-technical assumptions and values that an engineer would associate with the design of a computer component."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain why “freedom of expression” in cyberspace is important in computer engineering."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe positive and negative ways in which computer engineering alters the modes of interaction between people."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain why computing/network access is restricted in some countries."
+          },
+          {
+            "id": "6",
+            "outcome": "  Illustrate the use of example, analogy, and counter-analogy in an ethical argument."
+          },
+          {
+            "id": "7",
+            "outcome": "  Contrast what is legal with what is ethical."
+          },
+          {
+            "id": "8",
+            "outcome": "  Explain the importance of ethical integrity in the practice of computer engineering."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Listen attentively in technical and non-technical contexts."
+          },
+          {
+            "id": "2",
+            "outcome": "  Write technical reports using correct spelling and grammar."
+          },
+          {
+            "id": "3",
+            "outcome": "  Use compelling arguments when writing technical reports and when making oral presentations."
+          },
+          {
+            "id": "4",
+            "outcome": "  Become an assertive communicator in writing and in speaking."
+          },
+          {
+            "id": "5",
+            "outcome": "  Build positive rapport with an audience."
+          },
+          {
+            "id": "6",
+            "outcome": "  Develop strategies for effective communication in writing and in speaking."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe ways in which body language affects communication."
+          },
+          {
+            "id": "8",
+            "outcome": "  Use appropriate visual aids for effective communication."
+          },
+          {
+            "id": "9",
+            "outcome": "  Use visualization skill in presenting a technical paper or report."
+          },
+          {
+            "id": "10",
+            "outcome": "  Write technical reports per specified guidelines."
+          },
+          {
+            "id": "11",
+            "outcome": "  Use a presentation mode appropriate for a wide range of audiences."
+          },
+          {
+            "id": "12",
+            "outcome": "  Use a writing style appropriate to a wide range of audiences."
+          },
+          {
+            "id": "13",
+            "outcome": "  Engage with an audience in response to questions."
+          },
+          {
+            "id": "14",
+            "outcome": "  Write technical reports that are well organized and structured per accepted standards."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Describe the meaning of interdisciplinary teams in two different contexts."
+          },
+          {
+            "id": "2",
+            "outcome": "  Develop a possible skill set needed to function effectively on an interdisciplinary team."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe some computer engineering projects where interdisciplinary approaches are important."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explore ways in which industry approaches teamwork toward a common goal."
+          },
+          {
+            "id": "5",
+            "outcome": "  Create an interdisciplinary team for a given project by assigning roles and responsibilities for each team member."
+          },
+          {
+            "id": "6",
+            "outcome": "  Identify situations that would undermine interactions among members of an interdisciplinary team."
+          },
+          {
+            "id": "7",
+            "outcome": "  Explore ways in which one might assess the performance of an interdisciplinary team."
+          },
+          {
+            "id": "8",
+            "outcome": "  Describe possible assessment methods used to monitor interdisciplinary teams."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Summarize the basic concepts of relativism, utilitarianism, and deontological theories."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe some engineering problems related to ethical relativism."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe the differences between scientific and philosophical approaches to computer engineering dilemmas."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast the distinction between ethical theory and professional ethics."
+          },
+          {
+            "id": "5",
+            "outcome": "  Identify the weaknesses of the “hired agent” approach, strict legalism, naïve egoism, and naïve relativism as ethical frameworks."
+          },
+          {
+            "id": "6",
+            "outcome": "  Contrast Western and non-Western philosophical approaches and thought processes as they apply to the computer engineering field."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Articulate the importance of product safety when designing computer systems."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the differences between correctness, reliability, and safety."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain the limitations of testing to ensure correctness."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe other societal effects beyond risk, safety, and reliability."
+          },
+          {
+            "id": "5",
+            "outcome": "  Identify unwarranted assumptions of statistical independence of errors."
+          },
+          {
+            "id": "6",
+            "outcome": "  Discuss the potential for hidden problems in reuse of existing components."
+          },
+          {
+            "id": "7",
+            "outcome": "  Explain ways computer engineers would assess and manage risk, and how they would inform the public of risk."
+          },
+          {
+            "id": "8",
+            "outcome": "  Articulate ways public perception of risks often differs from actual risk, as well as the implications of this difference."
+          },
+          {
+            "id": "9",
+            "outcome": "  Explain why product safety and public consumption should be a hallmark of computer engineering."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Identify progressive stages in a whistle-blowing incident."
+          },
+          {
+            "id": "2",
+            "outcome": "  Specify the strengths and weaknesses of relevant professional codes as expressions of professionalism."
+          },
+          {
+            "id": "3",
+            "outcome": "  Identify ways professional codes could become guides to decision making."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explore some historical examples of software risks such as the Therac-25 case."
+          },
+          {
+            "id": "5",
+            "outcome": "  Provide arguments for and against licensure in computer engineering."
+          },
+          {
+            "id": "6",
+            "outcome": "  Provide arguments for and against licensure in non-engineering professions."
+          },
+          {
+            "id": "7",
+            "outcome": "  Identify ethical issues that may arise in software development and determine how to address them technically and ethically."
+          },
+          {
+            "id": "8",
+            "outcome": "  Develop a computer use policy with enforcement measures."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Describe the foundations of intellectual property."
+          },
+          {
+            "id": "2",
+            "outcome": "  Distinguish among patent, copyright, and trade secret protection."
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast between a patent and a copyright."
+          },
+          {
+            "id": "4",
+            "outcome": "  Outline some of the transnational issues concerning intellectual property."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss the legal background of copyright in national and international law."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain ways patent and copyright laws might vary internationally."
+          },
+          {
+            "id": "7",
+            "outcome": "  Outline the historical development of software patents and Contrast with other forms of intellectual property protection for software."
+          },
+          {
+            "id": "8",
+            "outcome": "  Distinguish among employees, contractors, and consultants and the implications of each group."
+          },
+          {
+            "id": "9",
+            "outcome": "  Explore a patent related to computer engineering and provide a summary of its content."
+          },
+          {
+            "id": "10",
+            "outcome": "  Explain product and professional liability and articulate their applicability within computer engineering."
+          },
+          {
+            "id": "11",
+            "outcome": "  Analyze the ethical ramifications of free open-source hardware and software."
+          }
+        ],
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Summarize the legal bases for the right to privacy and freedom of expression in one’s own country."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss ways in which privacy varies from country to country."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe current computer-based threats to privacy."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast the difference between viruses, worms, and Trojan horses."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain how the internet might change the historical balance in protecting freedom of expression."
+          },
+          {
+            "id": "6",
+            "outcome": "  Articulate some of the privacy implications related to massive database systems."
+          },
+          {
+            "id": "7",
+            "outcome": "  Outline the technical basis of viruses and denial-of-service attacks."
+          },
+          {
+            "id": "8",
+            "outcome": "  Provide examples of computer crime and articulate some crime prevention strategies."
+          },
+          {
+            "id": "9",
+            "outcome": "  Define cracking and contrast it to hacking in computer engineering."
+          },
+          {
+            "id": "10",
+            "outcome": "  Enumerate techniques to combat “cracker” attacks."
+          },
+          {
+            "id": "11",
+            "outcome": "  Discuss several “cracker” approaches and motivations."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Assess the total job cost of a project."
+          },
+          {
+            "id": "2",
+            "outcome": "  Apply engineering economic principles when considering fiscal arrangements."
+          },
+          {
+            "id": "3",
+            "outcome": "  Summarize the rationale for antimonopoly efforts."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe several ways in which shortages in the labor supply affect the information technology industry."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain ways in which computer engineers should cost out jobs with considerations of manufacturing, hardware, software, and engineering implications."
+          },
+          {
+            "id": "6",
+            "outcome": "  Contrast some of the prospects and pitfalls in entrepreneurship."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe the economic implications of monopolies."
+          },
+          {
+            "id": "8",
+            "outcome": "  Describe the effects of skilled labor supply and demand concerning the quality of computing products."
+          },
+          {
+            "id": "9",
+            "outcome": "  Summarize the rationale for antimonopoly efforts."
+          },
+          {
+            "id": "10",
+            "outcome": "  Contrast two pricing strategies one might use in the computing domain."
+          }
+        ],
+        "AREA SCOPE": [
+          {
+            "id": "1",
+            "outcome": "The importance of effective communication among professionals and other diverse audiences"
+          },
+          {
+            "id": "2",
+            "outcome": "The significance of leadership and professional interaction when functioning within an interdisciplinary team"
+          },
+          {
+            "id": "3",
+            "outcome": "The professional and ethical responsibilities of practicing computer engineers and the effects of their work on society"
+          },
+          {
+            "id": "4",
+            "outcome": "The importance of understanding contemporary issues, lifelong learning strategies, and legal and intellectual property issues"
+          },
+          {
+            "id": "5",
+            "outcome": "The importance of business acumen and skill in managing projects in the computer engineering field"
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Indicate some important tradeoffs a computer engineer may have to make while practicing professionally."
+          },
+          {
+            "id": "2",
+            "outcome": "  Articulate some ethical tradeoffs when making technical decisions."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe some unethical tradeoffs that might occur in professional practice."
+          },
+          {
+            "id": "4",
+            "outcome": "  Evaluate the risks of entering one’s own business."
+          },
+          {
+            "id": "5",
+            "outcome": "  Identify the professional’s role in security and the tradeoffs involved."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe the tradeoff between security and privacy, particularly as reflected in the post-9-11 era."
+          },
+          {
+            "id": "7",
+            "outcome": "  Defend ways to address limitations on access to computing."
+          }
+        ]
+      }
+    }
+  },
+  "CE-SEC": {
+    "name": "Security",
+    "code": "CE-SEC",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  State examples of famous security breaches and denials of service."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss common computer crime cost estimates and the difficulty of estimating them."
+          },
+          {
+            "id": "3",
+            "outcome": "  Define ethical hacking."
+          },
+          {
+            "id": "4",
+            "outcome": "  Contrast active with passive attacks."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss the issues surrounding computer security and privacy rights."
+          },
+          {
+            "id": "6",
+            "outcome": "  Enumerate various motivations of attackers."
+          },
+          {
+            "id": "7",
+            "outcome": "  Identify the types and targets of computer crime."
+          },
+          {
+            "id": "8",
+            "outcome": "  Summarize the major types of attacks performed by cybercriminals."
+          },
+          {
+            "id": "9",
+            "outcome": "  Discuss the professional’s role in security and the tradeoffs involved."
+          },
+          {
+            "id": "10",
+            "outcome": "  Give examples of historic and contemporary cryptography algorithms."
+          },
+          {
+            "id": "11",
+            "outcome": "  Justify the use of various security principles (e.g. defense in depth, functional vs. assurance requirements, security through obscurity is flawe, security is risk management, complexity is the enemy of security, and benefits of responsible open disclosure)."
+          },
+          {
+            "id": "12",
+            "outcome": "  Explain and defend the use of each of various security mechanisms (e.g., least privilege, fail-safe defaults, complete mediation, separation of privilege, and psychological acceptability.)"
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Discuss the major provisions of a relevant law such as HIPAA or the EU Data Protection Directive."
+          },
+          {
+            "id": "2",
+            "outcome": "  Summarize intellectual property and export control laws affecting security, especially encryption."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe some common approaches and tools used in penetration testing."
+          },
+          {
+            "id": "4",
+            "outcome": "  Articulate some challenges of computer forensics."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Define confidentiality and integrity."
+          },
+          {
+            "id": "2",
+            "outcome": "  Give examples of systems where integrity alone is sufficient."
+          },
+          {
+            "id": "3",
+            "outcome": "  Define “perfect forward secrecy” and explain why it is desirable."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Define misuse cases and explain their role in information security."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the role of human behavior in security system design, including examples of social engineering attacks."
+          },
+          {
+            "id": "3",
+            "outcome": "  Perform a simple fault tree analysis."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the types of errors that fuzz testing can reveal."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss issues related to the difficulty of updating deployed systems."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain the role of code reviews in system security."
+          },
+          {
+            "id": "7",
+            "outcome": "  Define the problem of insecure defaults."
+          },
+          {
+            "id": "8",
+            "outcome": "  Explain the tradeoffs inherent in responsible disclosure."
+          },
+          {
+            "id": "9",
+            "outcome": "  Discuss why the advantage is with the attacker in many contexts and how this must be addressed in system design."
+          },
+          {
+            "id": "10",
+            "outcome": "  Explain how to execute a stack overrun attack and the knowledge it requires."
+          },
+          {
+            "id": "11",
+            "outcome": "  Discuss recent examples of exploited memory access bugs and the errors that lead to their deployment and exploitation."
+          },
+          {
+            "id": "12",
+            "outcome": "  Explain the role of both safe libraries and argument validation in defending against buffer overflows."
+          },
+          {
+            "id": "13",
+            "outcome": "  Illustrate how a stack canary works."
+          },
+          {
+            "id": "14",
+            "outcome": "  Explain the problems solved by address space randomization and non-executable memory."
+          },
+          {
+            "id": "15",
+            "outcome": "  Define several types of malware such as viruses, worms, Trojan horses, key loggers, and ransomware."
+          },
+          {
+            "id": "16",
+            "outcome": "  Discuss countermeasures to common types of malware."
+          },
+          {
+            "id": "17",
+            "outcome": "  Explain current issues in the “arms race” between malware authors and defense system authors."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Explain the pros and cons of various discretionary and mandatory resource protection models."
+          },
+          {
+            "id": "2",
+            "outcome": "  Illustrate an access control matrix model."
+          },
+          {
+            "id": "3",
+            "outcome": "  Define the Bell-LaPadula model."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  State the motivation for putting all encryption algorithm variability in the keys."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss the effect of processing power on the effectiveness of cryptography."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain the meaning of and relationship between the three basic classes of cryptographic attacks: ciphertext only, known plaintext, chosen plaintext"
+          },
+          {
+            "id": "4",
+            "outcome": "  Discuss the similarities and differences among the three basic types of cryptographic functions (zero-, one-, and two-key): hash, secret key, and public key"
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss block and key length issues related to secret key cryptography."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe and evaluate a symmetric algorithm such as advanced encryption standard (AES), focusing on both design and implementation issues"
+          },
+          {
+            "id": "7",
+            "outcome": "  Explain some uses of one-time pads."
+          },
+          {
+            "id": "8",
+            "outcome": "  Perform modular arithmetic (addition, multiplication, and exponentiation)."
+          },
+          {
+            "id": "9",
+            "outcome": "  Apply the basic theory of modular arithmetic (Totient function and Euler’s theorem)."
+          },
+          {
+            "id": "10",
+            "outcome": "  Execute and apply the RSA algorithm for encryption and digital signatures."
+          },
+          {
+            "id": "11",
+            "outcome": "  Execute and apply the Diffie-Hellman algorithm for establishing a shared secret."
+          },
+          {
+            "id": "12",
+            "outcome": "  Demonstrate and discuss the motivations and weaknesses in various methods for applying secret key (block) encryption to a message stream such as cipher block chaining (CBC), cipher feedback mode (CTR)"
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Explain why hashes need to be roughly twice the length of secret keys using the birthday problem."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss the uses of hashes for fingerprinting and signing."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss the key properties of a cryptographic hash function contrasted with a general hash function."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the purpose of key operations used in cryptographic hashes such as permutation and substitution."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain how one can use a hash for a message authentication code (MAC)."
+          },
+          {
+            "id": "6",
+            "outcome": "  State key properties of secure hash algorithms or family such as SHA-3, or its successor."
+          },
+          {
+            "id": "7",
+            "outcome": "  Explain the problem solved by the HMAC standard."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Describe the goals of Transport layer security (TLS) and how they are attained using secret and public key methods along with certificates"
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss the reasons for using a firewall, various topologies, and firewall limitations."
+          },
+          {
+            "id": "3",
+            "outcome": "  Diagram and explain the use of virtual private networks (VPNs)."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe common denial of service attack methods, including distributed and amplified attacks, along with countermeasures taken at the computing system, protocol design, and backbone provider levels"
+          },
+          {
+            "id": "5",
+            "outcome": "  Define packet filtering."
+          },
+          {
+            "id": "6",
+            "outcome": "  Discuss the ramifications of the HTTP/HTTPS web platform design being stateless."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe the basic structure of URLs, HTTP requests, and HTTP digest authentication as they relate to security."
+          },
+          {
+            "id": "8",
+            "outcome": "  Explain the use of HTTP cookies including session cookies, expiration, and re-authentication for key operations."
+          },
+          {
+            "id": "9",
+            "outcome": "  Define cross-site scripting."
+          },
+          {
+            "id": "10",
+            "outcome": "  Explain an SQL injection attack and various methods of remediation."
+          },
+          {
+            "id": "11",
+            "outcome": "  Be familiar standards such as open web application security project (OWASP) and the OWASP Top 10 list."
+          }
+        ],
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Explain the difference between authorization and authentication."
+          },
+          {
+            "id": "2",
+            "outcome": "  Comment on authentication methods using password and/or address-based methods."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss eavesdropping and server database reading and explain how various authentication methods deal with them."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the general use of trusted intermediaries for both secret and private key systems."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss issues specific to authenticating people, including the three main approaches to doing so."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe the problems solved by multi-factor authentication methods including biometrics."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Describe current approaches to trusted computing such as trusted hardware, secure storage, and biometrics."
+          },
+          {
+            "id": "2",
+            "outcome": "  Evaluate a circumvention method for a trusted computing system and discuss the tradeoffs between implementation cost, information value, and circumvention difficulty."
+          }
+        ],
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Discuss various side channels and methods of encoding information on them."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss the tradeoffs of side-channel protection and system usability."
+          }
+        ],
+        "AREA SCOPE": [
+          {
+            "id": "1",
+            "outcome": "Recognition that security is risk management and inherently includes tradeoffs"
+          },
+          {
+            "id": "2",
+            "outcome": "Familiarity with the implications of hostile users, including social engineering attacks and misuse cases"
+          },
+          {
+            "id": "3",
+            "outcome": "Framework for understanding algorithms and other technological measures for enhancing security"
+          },
+          {
+            "id": "4",
+            "outcome": "Strategic and tactical design issues in information security"
+          }
+        ]
+      }
+    }
+  },
+  "CE-SGP": {
+    "name": "Signals and Processing",
+    "code": "CE-SGP",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Explain the purpose and role of digital signal processing and multimedia in computer engineering."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain some important signal processing areas such as digital audio, multimedia, image processing, video, signal compression, signal detection, and digital filters"
+          },
+          {
+            "id": "3",
+            "outcome": "  Contrast analog and digital signals using the concepts of sampling and quantization."
+          },
+          {
+            "id": "4",
+            "outcome": "  Draw a digital signal processing block diagram and define its key components: antialiasing filter, analog to digital converter, digital signal processing, digital to analog filter, and reconstruction filter."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain the need for using transforms and how they differ for analog and discrete-time signals."
+          },
+          {
+            "id": "6",
+            "outcome": "  Contrast some techniques used in transformations such as Laplace, Fourier, and wavelet transforms."
+          },
+          {
+            "id": "7",
+            "outcome": "  Indicate design criteria for low- and high-pass filters."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Describe the tradeoffs involved with increasing the sampling rate."
+          },
+          {
+            "id": "2",
+            "outcome": "  Indicate key issues involved with sampling periodic signals including the sampling period."
+          },
+          {
+            "id": "3",
+            "outcome": "  Indicate key issues involved with sampling non-periodic signals including spectral resolution."
+          },
+          {
+            "id": "4",
+            "outcome": "  Prove whether a system is linear, time-invariant, causal, and/or stable given its input to output mapping."
+          },
+          {
+            "id": "5",
+            "outcome": "  Derive non-recursive and recursive difference equations, as appropriate, given descriptions of input-output behavior for a linear, time-invariant system"
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Explain how the concept of impulse response arises from the combination of linearity and time-invariance."
+          },
+          {
+            "id": "2",
+            "outcome": "  Derive the linear convolution summation from the definition of impulse response and linearity."
+          },
+          {
+            "id": "3",
+            "outcome": "  Use the commutative property of convolution as a foundation for providing two explanations of how a system output depends on the input and system impulse response"
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  State, prove, and apply properties of the z-transform and its inverse."
+          },
+          {
+            "id": "2",
+            "outcome": "  State, prove, and apply properties of the discrete-time Fourier transform (DTFT) and its inverse."
+          },
+          {
+            "id": "3",
+            "outcome": "  State, prove, and apply properties of discrete Fourier transform (DFT) and its inverse."
+          },
+          {
+            "id": "4",
+            "outcome": "  Prove and state the symmetries of the Fourier transforms for real signals."
+          },
+          {
+            "id": "5",
+            "outcome": "  State the frequency shift property for Fourier transforms."
+          },
+          {
+            "id": "6",
+            "outcome": "  Prove and state how Parseval’s theorem relates power or energy, as appropriate, for the Fourier transforms."
+          },
+          {
+            "id": "7",
+            "outcome": "  Explain the relationship among the z-transform, DTFT, DFT, and FFTs (fast Fourier transforms)."
+          },
+          {
+            "id": "8",
+            "outcome": "  Define and calculate the Laplace transform of a continuous signal."
+          },
+          {
+            "id": "9",
+            "outcome": "  Define and calculate the inverse Laplace transform."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Interpret the frequency response of an LTI system as an alternative view from the impulse response."
+          },
+          {
+            "id": "2",
+            "outcome": "  Analyze the frequency response of a system using the DTFT and the DFT."
+          },
+          {
+            "id": "3",
+            "outcome": "  Determine pole and zero locations in the z-plane given a difference equation describing a system."
+          },
+          {
+            "id": "4",
+            "outcome": "  Relate the frequency selectivity of filters to the z-transform domain system representation."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe the repeated time series implication of frequency sampling."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  State the sampling theorem and the related concepts of the Nyquist frequency and aliasing."
+          },
+          {
+            "id": "2",
+            "outcome": "  Demonstrate aliasing on a sampled sine wave."
+          },
+          {
+            "id": "3",
+            "outcome": "  State the relationship between time and frequency domains with respect to sampling."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain when spectra are discrete vs. continuous."
+          },
+          {
+            "id": "5",
+            "outcome": "  Calculate the errors or noise generated by sampling and quantizing."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Sketch the spectrum of a periodic signal."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast the spectra of an impulse and a square wave."
+          },
+          {
+            "id": "3",
+            "outcome": "  Calculate spectra of periodic and aperiodic signals."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain how the block size controls the tradeoff between spectral resolution and density."
+          },
+          {
+            "id": "5",
+            "outcome": "  Calculate a spectrogram and explain what its key parameters are."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain filtering as adding spectra in a frequency domain on a logarithmic scale."
+          },
+          {
+            "id": "7",
+            "outcome": "  Design interpolation and reconstruction filters using the sinc function."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Design finite and infinite impulse response (FIR and IIR) filters that have specified frequency characteristics including magnitude and phase responses"
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain the general tradeoffs between FIR and IIR filters."
+          },
+          {
+            "id": "3",
+            "outcome": "  Demonstrate that not all recursive filters are IIR, using a moving average as an example."
+          },
+          {
+            "id": "4",
+            "outcome": "  Use the DFT to accomplish filtering through (circular) convolution."
+          },
+          {
+            "id": "5",
+            "outcome": "  State the condition for linear phase in an FIR filter."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain the tradeoffs between spectral resolution, length, and delay in an FIR filter."
+          },
+          {
+            "id": "7",
+            "outcome": "  Explain why one or more FIR filter design methods work."
+          },
+          {
+            "id": "8",
+            "outcome": "  Explain why one or more IIR filter design methods work including notch filters using pole-zero pairs."
+          },
+          {
+            "id": "9",
+            "outcome": "  Design a digital filter using analog techniques (e.g., bilinear transform) and explain its key parameters."
+          },
+          {
+            "id": "10",
+            "outcome": "  Explain physically realizable system issues relevant in filter design including causality and time shifts, and response truncation."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Select an appropriate window function given a problem statement regarding detection or identification tradeoffs."
+          },
+          {
+            "id": "2",
+            "outcome": "  Define signals that vary in time and/or space and interpret frequencies in both domains."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe how sampling affects image integrity."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain how low-pass filtering tends to smooth images."
+          },
+          {
+            "id": "5",
+            "outcome": "  Contrast between reconstruction and enhancement filters."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe methods for minimizing image noise."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe how digital techniques perceptually or otherwise enhance speech and audio signals."
+          },
+          {
+            "id": "8",
+            "outcome": "  Explain techniques for noise reduction (e.g., Weiner or median filters) or cancellation (e.g., LMS filters) in audio processing."
+          },
+          {
+            "id": "9",
+            "outcome": "  Explain the motivation for audio coding and state key elements of MPEG or related algorithms including perceptual elements."
+          }
+        ],
+        "AREA SCOPE": [
+          {
+            "id": "1",
+            "outcome": "Need for and tradeoffs made when sampling and quantizing a signal"
+          },
+          {
+            "id": "2",
+            "outcome": "Linear, time-invariant system properties"
+          },
+          {
+            "id": "3",
+            "outcome": "Frequency as an analysis domain complementary to time"
+          },
+          {
+            "id": "4",
+            "outcome": "Filter design and implementation"
+          },
+          {
+            "id": "5",
+            "outcome": "Control system properties and applications"
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Explain how window functions improve transform properties."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain the periodic assumption in spectral analysis."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain the purpose of a window function and its effect on a spectrum."
+          },
+          {
+            "id": "4",
+            "outcome": "  Discuss the tradeoffs of common window functions such as rectangular, Blackman, Hann, and Hamming."
+          }
+        ],
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Define basic control system concepts (e.g., zero-state response, zero-input response, stability)."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast design methods (root-locus, frequency-response, state-space) for control systems."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain limitations and trade-offs associated with microcontroller implementations of digital control systems."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe potential applications of digital control systems for electro-mechanical systems, including robotics."
+          },
+          {
+            "id": "5",
+            "outcome": "  Implement a simple microcontroller-based motion control system with sensors and actuators."
+          }
+        ]
+      }
+    }
+  },
+  "CE-SPE": {
+    "name": "Systems and Project Engineering",
+    "code": "CE-SPE",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Articulate differences between software and hardware engineering, and computer systems engineering."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain briefly the concept of a system and a subsystem, and discuss the role of people, the different disciplines involved, and the need for interdisciplinary approaches to the development of the range of computer-based systems."
+          },
+          {
+            "id": "3",
+            "outcome": "  Indicate some important elements of computer systems engineering such as design processes, requirements, specifications, design, testing, validation, evolution, project management, hardware-software interface, and the human-computer interface."
+          },
+          {
+            "id": "4",
+            "outcome": "  Define and explain product life cycle, the role of system engineering throughout a product life cycle, and reasons why many computer-based system designs become continually evolving systems."
+          },
+          {
+            "id": "5",
+            "outcome": "  Provide reasons for the importance of testing, validation, and maintenance in computer systems development."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain the importance of design decisions and tradeoffs at the systems level, including balancing costs, performance, power, dependability, and market considerations."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Select, with justification, an appropriate set of tools to support the development of a range of computer-based systems, including tools for project management, requirements and specifications definition and analysis, configuration management, tradeoff analysis, and computer-aided tools for software, hardware, and systems design, including modeling, simulation, evaluation, and testing."
+          },
+          {
+            "id": "2",
+            "outcome": "  Analyze and evaluate a set of tools in an area of computer system development (e.g., management, modeling, or testing)."
+          },
+          {
+            "id": "3",
+            "outcome": "  Demonstrate the ability to use a range of tools to support the development of a computer-based system of medium size. (This could be done in the context of a class project or assignment.)"
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the importance and influence of standards, guidelines, legislation, regulations, and professional issues on the development of computer-based systems."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe tradeoffs that occur in following regulatory standards and regulations."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Describe basic elements of project management that support development of computer-based systems for a variety of applications, including interdisciplinary issues."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the different phases of a system’s life cycle and identify tools to support these phases, including such project-management tools as Gantt charts for project planning, scheduling, cost analysis, resource allocation, and teamwork  problem resolution."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe methods and tools for project configuration management and management of project information, ensuring timely compliance with specifications and timely delivery."
+          },
+          {
+            "id": "4",
+            "outcome": "  Prepare a project plan for a computer-system design project that includes estimates of size and effort, a schedule, resource allocation,configuration control, change management, and project risk identification and management—this could be done in the context of a class project or assignment."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Define the meaning of user experience (UX) and describe the evolution from human factors to user experience design (UXD)."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast the physical and non-physical aspects of UXD."
+          },
+          {
+            "id": "3",
+            "outcome": "  Summarize some common human-computer interaction styles, and discuss how one would analyze human interaction with computer-based systems."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe common usability guidelines and standards; give examples of functional and usability requirements that can be beneficial in developing human-centered computer systems, including users with different abilities (e.g., age, physical disabilities)."
+          },
+          {
+            "id": "5",
+            "outcome": "  Identify fundamental principles for effective GUI design, relevant to different applications and different system platforms in computer engineering."
+          },
+          {
+            "id": "6",
+            "outcome": "  Discuss tradeoffs involved when developing a UX system environment."
+          },
+          {
+            "id": "7",
+            "outcome": "  Identify system components that are suitable for the realization of high-quality multimedia interfaces."
+          },
+          {
+            "id": "8",
+            "outcome": "  Evaluate an existing interactive system with appropriate human-centered criteria and usability, giving reasons for selection of criteria and techniques."
+          },
+          {
+            "id": "9",
+            "outcome": "  Discuss the role of visualization technologies in human-computer interaction."
+          },
+          {
+            "id": "10",
+            "outcome": "  Explain the importance of social psychology in the design of user interfaces."
+          },
+          {
+            "id": "11",
+            "outcome": "  Describe two main principles for universal design."
+          },
+          {
+            "id": "12",
+            "outcome": "  List advantages and disadvantages of biometric access control."
+          },
+          {
+            "id": "13",
+            "outcome": "  Describe a possible interface that allows a user with severe physical disabilities to use a website."
+          },
+          {
+            "id": "14",
+            "outcome": "  Design, prototype, and conduct a usability test of a simple 2D GUI, using a provided GUI-builder, and, in doing so, create an appropriate usability test plan."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Recognize risk, dependability, and safety requirements for a range of computer-based systems, and discuss potential tradeoffs between these and other system requirements, such as performance and low-power operation."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain the concepts of reliability, availability, and maintainability, as measures of system dependability, and explain their relationship to faults"
+          },
+          {
+            "id": "3",
+            "outcome": "  Perform a risk analysis of a medium-size computer-based system."
+          },
+          {
+            "id": "4",
+            "outcome": "  Identify at least two tradeoff concerns when developing a safety critical system."
+          },
+          {
+            "id": "5",
+            "outcome": "  Indicate why it is important to know how to build dependable systems from unreliable components."
+          },
+          {
+            "id": "6",
+            "outcome": "  Demonstrate an ability to model reliability, availability, and maintainability of simple computer-based systems."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe some strategies for achieving desired levels of dependability, safety, and security."
+          },
+          {
+            "id": "8",
+            "outcome": "  Discuss the nature of hardware and software faults, and redundancy methods used to tolerate them."
+          },
+          {
+            "id": "9",
+            "outcome": "  Describe fault tolerance and dependability requirements of different applications (such as database, aerospace, telecommunications, industrail contorl, and transcation processing)."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Explain the need for a disciplined approach to system development and the elements of a disciplined approach in specific contexts."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the nature of a life cycle, the role of life cycle models, quality in relation to the life cycle, the influence of system nature, and the size on choice of life cycle model"
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe some common software and hardware development models and show how to use these models during the development of a computer based system"
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain how to gather data to inform, assess, and improve system design processes."
+          },
+          {
+            "id": "5",
+            "outcome": "  Describe the benefits of agile methods for hardware and software design."
+          },
+          {
+            "id": "6",
+            "outcome": "  Discuss the importance of modular design processes, and the design for modularity and reuse in the development of a computer-based system"
+          },
+          {
+            "id": "7",
+            "outcome": "  Select, with justification, system development models most appropriate for the development and maintenance of diverse computer-based systems."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Perform an analysis of a proposed computer-based system design project, including identification of need, information gathering, problem definition, feasibility considerations, and economic considerations."
+          },
+          {
+            "id": "2",
+            "outcome": "  Articulate a range of functional and non-functional requirements that might be applicable to the design of computer-based systems for a range of applcations, and discuss how requirements can change as a system design project evolves."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss how tradeoffs between different system requirements might be necessary for a proposed computer-based system design."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe the strengths and weaknesses of different approaches to requirements elicitation and capture."
+          },
+          {
+            "id": "5",
+            "outcome": "  Apply one or more techniques for elicitation and analysis to produce a set of requirements for a medium-size computer-based system."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe some quality factors for measuring the ability of a system design to meet requirements"
+          },
+          {
+            "id": "7",
+            "outcome": "  Conduct a review of a computer-based system requirements document using best practices to determine the document’s quality."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Discuss the relationship and differences between system specifications and requirements."
+          },
+          {
+            "id": "2",
+            "outcome": "  Articulate some typical functional and nonfunctional specifications for the design of a computer-based system and the importance of specifications to the design process."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss one or more approaches for deriving system specifications from a requirements document."
+          },
+          {
+            "id": "4",
+            "outcome": "  Discuss how tradeoffs between different system specifications might be necessary to meet system requirements."
+          },
+          {
+            "id": "5",
+            "outcome": "  Assess the quality of a given specification, considering such factors as completeness, consistency, simplicity, verifiability, basis for design, specification in the event of failure, and degraded modes of operation"
+          },
+          {
+            "id": "6",
+            "outcome": "  Given a set of requirements, create a high-quality specification for a computer-based system of medium complexity."
+          },
+          {
+            "id": "7",
+            "outcome": "  Create a test plan, based on the specification, considering the role of independence in relation to test, safety cases, and limitations of such tests"
+          }
+        ],
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Describe concepts and principles of system architecture design, such as top-down design, subdivision into systems and subsystems, modularity and reuse, the hardware/software interface, and tradeoffs between various design options."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe strengths and weaknesses of various systems-level architectural design methods, including procedural and functional methods."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe design methods to meet system specifications and achieve performance measures, including dependability and safety."
+          },
+          {
+            "id": "4",
+            "outcome": "  Given a system specification, select an appropriate design methodology (e.g., structured design or modular design) and create an architectural design for a medium-size computer-based system."
+          },
+          {
+            "id": "5",
+            "outcome": "  Demonstrate ability to model, simulate, and prototype a range of computer-based system architectures."
+          },
+          {
+            "id": "6",
+            "outcome": "  Using appropriate guidelines, conduct the review of one or more computer-based system designs to evaluate design quality based on key design principles and concepts."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Recognize the potential of hardware-software co-design in circumstances in which this approach is pertinent."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss how particular design constraints can make the coordinated development of both hardware and software important, such as in the design of low-power systems, real-time systems, or systems with high-performance requirements."
+          },
+          {
+            "id": "3",
+            "outcome": "  Apply hardware-software co-design principles in situations of modest complexity."
+          },
+          {
+            "id": "4",
+            "outcome": "  Discuss challenges to effective hardware-software co-design, such as demands of hard real-time features."
+          },
+          {
+            "id": "5",
+            "outcome": "  Demonstrate ability to co-design to achieve specific technical objectives, such as low power, real-time operation, and high performance."
+          },
+          {
+            "id": "6",
+            "outcome": "  Select and apply computer-aided tools to support hardware and software co-design."
+          }
+        ],
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Recognize the range of testing and validation methods appropriate for each stage of the system life cycle, including review of hardware models and software code; white box, black box, and regression testing; stress testing; and interface testing."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the role of various system validation tools and show how tools can support efficient and effective development."
+          },
+          {
+            "id": "3",
+            "outcome": "  Discuss approaches to testing and validation at the unit level and at the integration and system levels."
+          },
+          {
+            "id": "4",
+            "outcome": "  Create a test plan and generate test cases for a computer-based system of medium complexity, selecting an appropriate combination of tests for ensuring system quality."
+          },
+          {
+            "id": "5",
+            "outcome": "  Demonstrate the application of the different types and levels of testing (unit, integration, systems, and acceptance) on computer-based systems of medium size."
+          },
+          {
+            "id": "6",
+            "outcome": "  Undertake, as part of a team activity, an inspection of a medium-size computer-based system design."
+          },
+          {
+            "id": "7",
+            "outcome": "  Discuss methods used for manufacturing test and inspection, and acceptance testing."
+          }
+        ],
+        "12": [
+          {
+            "id": "1",
+            "outcome": "  Describe the need for, and characteristics of, maintainable software, hardware, and system designs."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss the inevitability of maintenance in certain systems, such as diagnosis, defect removal, hardware and/or software upgrades, and enhancement."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe how to apply principles of maintainable design to a computer-based system of modest complexity."
+          },
+          {
+            "id": "4",
+            "outcome": "  Identify issues associated with system evolution and explain their impact on the system life cycle."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain configuration management and version control in engineering systems—the need for it, the issues associated with it, the nature of the information to be held, legal requirements, and planning for possible disasters."
+          },
+          {
+            "id": "6",
+            "outcome": "  Develop a plan for reengineering a medium-size product in response to a change request."
+          },
+          {
+            "id": "7",
+            "outcome": "  Identify and exploit opportunities for component reuse in a variety of contexts."
+          },
+          {
+            "id": "8",
+            "outcome": "  Discuss how design decisions can affect future generations, including impact on the environment and energy resources, and disposal of systems and components at end of life."
+          },
+          {
+            "id": "9",
+            "outcome": "  Discuss design for manufacturability, part selection and standardization, manufacturing cost, and product lead-time for delivery."
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "3": [
+          {
+            "id": "5",
+            "outcome": "  Identify and describe the use of metrics in support of project management."
+          },
+          {
+            "id": "6",
+            "outcome": "  Describe the roles of consultants and subcontractors in design projects, including their use and their management."
+          },
+          {
+            "id": "7",
+            "outcome": "  Discuss how standards and legal requirements can affect the management of design projects."
+          }
+        ],
+        "4": [
+          {
+            "id": "15",
+            "outcome": "  Discuss other techniques for interaction, such as command line interface and shell scripts."
+          },
+          {
+            "id": "16",
+            "outcome": "  Identify the potential for the use of intelligent systems in a range of computer-based applications, and describe situations in which intelligent systems may, or may not, be reliable enough to deliver a required response."
+          }
+        ],
+        "5": [
+          {
+            "id": "10",
+            "outcome": "  Describe one or more strategies for risk reduction and risk control, including implications for implementation."
+          },
+          {
+            "id": "11",
+            "outcome": "  Discuss how international standards, legal requirements, and regulations relate to risk, safety and dependability impact the design of computer based systems 2 user experince (UX) was formerly known as human computer interaction (HCI)"
+          },
+          {
+            "id": "12",
+            "outcome": "  Discuss the use of failure modes and effects analysis (FEMA) and fault tree analysis in the design of high-integrity systems."
+          },
+          {
+            "id": "13",
+            "outcome": "  Identify some hardware redundancy approaches for fault-tolerant system design, including the use of error detecting and correcting codes"
+          },
+          {
+            "id": "14",
+            "outcome": "  Discuss one or more software approaches to tolerating hardware faults."
+          },
+          {
+            "id": "15",
+            "outcome": "  Describe one or more methods for tolerating software faults, such as N-version programming, recovery blocks, and rollback and recovery"
+          }
+        ],
+        "6": [
+          {
+            "id": "8",
+            "outcome": "  Explain the role of process maturity models, standards, and guidelines."
+          },
+          {
+            "id": "9",
+            "outcome": "  Identify several metrics for software, hardware, and system processes."
+          }
+        ],
+        "7": [
+          {
+            "id": "8",
+            "outcome": "  Use a common, non-formal method to model and state—in the form of a requirements specification document—the requirements for a medium-size computer-based sytem (e.g structured analysis or object-oriented-analysis)"
+          }
+        ],
+        "8": [
+          {
+            "id": "8",
+            "outcome": "  Describe and demonstrate the use of one or more formal specification languages and techniques."
+          },
+          {
+            "id": "9",
+            "outcome": "  Translate into natural language a system specification written in a commonly used formal specification language."
+          }
+        ],
+        "9": [
+          {
+            "id": "7",
+            "outcome": "  At the architectural level, discuss possible failure modes, common cause failures, dealing with failure, inclusion of diagnostics in the event of failure, and approaches to fault-tolerant design."
+          },
+          {
+            "id": "8",
+            "outcome": "  Discuss design issues associated with achieving dependability, the role of redundancy, independence of designs, separation of concerns, and specifications of subsystems."
+          }
+        ],
+        "11": [
+          {
+            "id": "8",
+            "outcome": "  Discuss methods for specialized testing: security, dependability/fault tolerance, and usability."
+          }
+        ]
+      }
+    }
+  },
+  "CE-SRM": {
+    "name": "System Resource Management",
+    "code": "CE-SRM",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Explain the purpose of an operating system and the services one provides."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe differences in functionality found in mobile, networked, client-server, distributed operating systems, and single user systems."
+          },
+          {
+            "id": "3",
+            "outcome": "  Define key design criteria including efficiency, robustness, and security."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain major threats to operating systems and how to guard against them."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Give examples of real-time performance monitoring tools and log-based performance monitoring tools."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain what information a real-time performance monitoring tool provides and when such a tool is useful."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain what information a log-based performance monitoring tool provides and when such a tool is useful."
+          },
+          {
+            "id": "4",
+            "outcome": "  List key components of the IEEE POSIX (Portable Operating System Interface) standard."
+          },
+          {
+            "id": "5",
+            "outcome": "  Define the role of some key SRM APIs such as WinAPI and various Java APIs."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Describe the role of an operating system in managing system resources and interfacing between hardware and software elements."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain what concurrency is and why it must be supported in managing system resources."
+          },
+          {
+            "id": "3",
+            "outcome": "  Give examples of runtime problems that can arise due to concurrent operation of multiple tasks or components in the system, such as deadlock and race conditions."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe basic types of interrupts and what must be done to handle them."
+          },
+          {
+            "id": "5",
+            "outcome": "  Give examples that illustrate why task scheduling and dispatch are needed as system resources are managed."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain the difference between preemptive and non-preemptive scheduling and demonstrate awareness of common algorithms used for scheduling."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe how interrupts, dispatching tasks, and context switching are used to support concurrency."
+          },
+          {
+            "id": "8",
+            "outcome": "  Explain the memory hierarchy (cache through virtual memory) and the cost-performance tradeoffs made in design."
+          },
+          {
+            "id": "9",
+            "outcome": "  Describe the choices to be made in file system design and how these choices affect system resource management."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Explain the characteristics of hard real-time, soft real-time, and safety-critical real-time environments."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss issues of uncertainty that can arise in memory hierarchy design and disk or other fixed storage design and methods of addressing them."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain latency and its role in RTOS design."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain how an event-driven scheduler operates and be able give examples of commonly used algorithms."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain how round-robin scheduling differs from event driven strategies."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain why memory allocation is critical in a real-time system."
+          },
+          {
+            "id": "7",
+            "outcome": "  Explain failure modes and recovery strategies appropriate for RTOS."
+          },
+          {
+            "id": "8",
+            "outcome": "  Discuss tradeoffs among various operating system options."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Describe the system communication that must be managed in a mobile device (e.g., Wi-Fi, Bluetooth)."
+          },
+          {
+            "id": "2",
+            "outcome": "  Discuss constraints inherent in the mobile environment."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain the demands placed on the mobile operating system by the user."
+          },
+          {
+            "id": "4",
+            "outcome": "  Discuss the challenges of implementation across mobile platforms."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss sources of security threats and their management."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Explain and give examples of basic concepts in concurrent processing such as multiprocessor, multicore, SIMD, MIMD, shared memory,and distributed memory."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain what is needed to support scheduling of multiple threads."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe how simultaneous multithreaded (SMT) execution works."
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Describe why performance is important in significant applications (e.g., mission critical systems)."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain why metrics such as response time, throughput, latency, availability, reliability, and power consumption are significant in performance evaluation."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain what must be measured to make use of important performance evaluation metrics."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe the strengths of commonly used benchmark suites and their limitations."
+          },
+          {
+            "id": "5",
+            "outcome": "  Demonstrate understanding of commonly used evaluation models (e.g., deterministic, stochastic, simulation) and circumstances in which it is appropriate to use them."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain how profiling and tracing data is collected and used in evaluating system performance."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Define the role of the hypervisor or virtual machine monitor."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe what the role of the host machine is and its relationship to the guest machines."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe what the host operating system is and how it is related to guest operating systems."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain what a native hypervisor is and how it differs from a hosted hypervisor."
+          },
+          {
+            "id": "5",
+            "outcome": "  Give examples of isolation and security issues arising in virtualized environments."
+          }
+        ]
+      }
+    }
+  },
+  "CE-SWD": {
+    "name": "Software Development",
+    "code": "CE-SWD",
+    "categories": {
+      "CORE": {
+        "1": [
+          {
+            "id": "1",
+            "outcome": "  Explain why early software was written in machine language and assembly language."
+          },
+          {
+            "id": "2",
+            "outcome": "  Name some early programming languages and list some of their key features."
+          },
+          {
+            "id": "3",
+            "outcome": "  Give examples of milestones in interactive user interfaces."
+          },
+          {
+            "id": "4",
+            "outcome": "  Describe the magnitude of changes in software development environments over time."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain why high level languages are important to improved productivity."
+          },
+          {
+            "id": "6",
+            "outcome": "  List and define the steps of a software life cycle."
+          }
+        ],
+        "2": [
+          {
+            "id": "1",
+            "outcome": "  Identify the roles of software development tools, such as compilers, assemblers, linkers, and debuggers."
+          },
+          {
+            "id": "2",
+            "outcome": "  Identify the expected functionality of a typical modern integrated development environment (IDE)."
+          },
+          {
+            "id": "3",
+            "outcome": "  Use an IDE to develop a simple application."
+          },
+          {
+            "id": "4",
+            "outcome": "  Effectively use a debugger to trace code execution and identify defects in code."
+          }
+        ],
+        "3": [
+          {
+            "id": "1",
+            "outcome": "  Explain the execution of a simple program."
+          },
+          {
+            "id": "2",
+            "outcome": "  Write simple and secure programs that accomplish the intended task."
+          },
+          {
+            "id": "3",
+            "outcome": "  Write simple functions and explain the roles of parameters and arguments."
+          },
+          {
+            "id": "4",
+            "outcome": "  Design, implement, test, and debug a program that uses fundamental programming constructs in nontrivial ways."
+          },
+          {
+            "id": "5",
+            "outcome": "  Choose appropriate iteration and conditional constructs to accomplish a given programming task."
+          },
+          {
+            "id": "6",
+            "outcome": "  Contrast imperative (i.e., procedural), declarative (i.e., functional), and structured (i.e., object-oriented) software design paradigms."
+          },
+          {
+            "id": "7",
+            "outcome": "  Define and explain the elements of good programming (including the need to avoid opportunities for security breaches)."
+          }
+        ],
+        "4": [
+          {
+            "id": "1",
+            "outcome": "  Identify a practical example of a problem in which different problem-solving strategies would be useful."
+          },
+          {
+            "id": "2",
+            "outcome": "  Use a divide-and-conquer strategy to solve a problem."
+          },
+          {
+            "id": "3",
+            "outcome": "  Use a greedy approach to solve an appropriate problem and determine if the approach used produces an optimal result."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain the role of heuristics in problem-solving strategies."
+          },
+          {
+            "id": "5",
+            "outcome": "  Discuss tradeoffs among different problem-solving strategies."
+          },
+          {
+            "id": "6",
+            "outcome": "  Given a problem, determine an appropriate problem-solving strategy to use in devising a solution."
+          }
+        ],
+        "5": [
+          {
+            "id": "1",
+            "outcome": "  Demonstrate knowledge of fundamental data structures, their uses, and tradeoffs among them."
+          },
+          {
+            "id": "2",
+            "outcome": "  Demonstrate the use of high quality program libraries for building and searching data structures."
+          },
+          {
+            "id": "3",
+            "outcome": "  Explain what a hash table is, why it is useful, and the role that collision avoidance and resolution play."
+          },
+          {
+            "id": "4",
+            "outcome": "  Explain what a binary search tree is and why maintaining balance has impact on algorithm performance."
+          },
+          {
+            "id": "5",
+            "outcome": "  Solve problems using library functions for standard data structures (linked lists, sorted arrays, trees, and hash tables) including insertion, deletion, searching and sorting (rather than implementing the algorithm from scratch)."
+          }
+        ],
+        "6": [
+          {
+            "id": "1",
+            "outcome": "  Describe the concept of recursion and give examples of its use."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain the relationship between iteration and recursion."
+          },
+          {
+            "id": "3",
+            "outcome": "  Identify the base case and the general case of a recursively defined problem."
+          },
+          {
+            "id": "4",
+            "outcome": "  Itemize possible problems that can occur at run-time because of employing recursion in programs."
+          }
+        ],
+        "7": [
+          {
+            "id": "1",
+            "outcome": "  Decompose a problem domain into classes of objects having related state (data members) and behavior (methods)."
+          },
+          {
+            "id": "2",
+            "outcome": "  Contrast and contrast method overloading and overriding and illustrate with examples."
+          },
+          {
+            "id": "3",
+            "outcome": "  State the benefits and disadvantages of compile-time vs. runtime method binding."
+          },
+          {
+            "id": "4",
+            "outcome": "  Employ a modeling language (such as UML) to illustrate a simple class hierarchy with subclass structure that allows re-use of code for different subclasses."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain mechanisms for disambiguation of function invocation when method names are overridden or overloaded."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain the concepts of information hiding, coupling and cohesion, and data abstraction as they relate to object-oriented design."
+          }
+        ],
+        "8": [
+          {
+            "id": "1",
+            "outcome": "  Explain the differences between testing, verification, and validation."
+          },
+          {
+            "id": "2",
+            "outcome": "  Demonstrate an understanding of unit testing strategies (e.g., white box, black box, and grey box) and tradeoffs."
+          },
+          {
+            "id": "3",
+            "outcome": "  Demonstrate an understanding of verification and validation strategies."
+          },
+          {
+            "id": "4",
+            "outcome": "  Construct a test dataset for use in unit testing of a module, exercise that dataset, and produce a test report."
+          },
+          {
+            "id": "5",
+            "outcome": "  Explain the difference between unit testing and integration testing."
+          },
+          {
+            "id": "6",
+            "outcome": "  Explain commonly used metrics for software quality."
+          },
+          {
+            "id": "7",
+            "outcome": "  Describe at least one tool for automated testing and/or test pattern generation."
+          }
+        ],
+        "9": [
+          {
+            "id": "1",
+            "outcome": "  Explain and provide examples of data models and their use."
+          },
+          {
+            "id": "2",
+            "outcome": "  Employ standard modeling notation (such as UML) to express and document an appropriate data model for a computer engineering problem."
+          }
+        ],
+        "10": [
+          {
+            "id": "1",
+            "outcome": "  Explain how use of database systems evolved from programming with simple collections of data files."
+          },
+          {
+            "id": "2",
+            "outcome": "  Describe the major components of a modern database system."
+          },
+          {
+            "id": "3",
+            "outcome": "  Describe the functionality provided by languages such as SQL."
+          },
+          {
+            "id": "4",
+            "outcome": "  Give examples of interactions with database systems that are relevant to computer engineering."
+          }
+        ],
+        "11": [
+          {
+            "id": "1",
+            "outcome": "  Explain the problems associated with mobile systems and location aware systems, including the security issues."
+          },
+          {
+            "id": "2",
+            "outcome": "  Explain the difficulties associated with the programming effective programming of multi-core processors."
+          },
+          {
+            "id": "3",
+            "outcome": "  Demonstrate an ability to effectively program a multi-core processor."
+          }
+        ]
+      },
+      "ELECTIVE": {
+        "4": [
+          {
+            "id": "7",
+            "outcome": "  Use dynamic programming to solve an appropriate problem."
+          }
+        ],
+        "12": [
+          {
+            "id": "1",
+            "outcome": "  Design and implement reusable functions."
+          },
+          {
+            "id": "2",
+            "outcome": "  State the purpose of deprecation."
+          },
+          {
+            "id": "3",
+            "outcome": "  Define backward and forward compatibility problems and some solutions to issues associated with these problems."
+          },
+          {
+            "id": "4",
+            "outcome": "  Write code against common application program interfaces (APIs) for system services, data structures, or network communications."
+          }
+        ],
+        "13": [
+          {
+            "id": "1",
+            "outcome": "  Explain the role of data mining in computer engineering applications."
+          },
+          {
+            "id": "2",
+            "outcome": "  Provide an illustration of the role of machine learning in computer engineering."
+          }
+        ],
+        "14": [
+          {
+            "id": "1",
+            "outcome": "  Construct visualizations of data that improve comprehensive of the data, communication of the relevant information, and aid in decision making."
+          }
+        ]
+      }
+    }
+  }
+}
