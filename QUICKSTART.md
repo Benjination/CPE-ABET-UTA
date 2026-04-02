@@ -26,6 +26,13 @@ python app.py
 build.bat
 ```
 
+### Build Windows From macOS (GitHub Actions)
+1. Push your latest changes to `main`
+2. Open Actions in GitHub
+3. Run `Build Windows Package`
+4. Download artifact `ABET-CPE-Mapper-windows`
+5. Send the downloaded zip to Steve
+
 ## Sharing Your Mappings
 
 1. Make your changes in the app

@@ -2,6 +2,8 @@
 REM Build script for ABET CPE Course Mapping System (Windows)
 REM Creates a standalone executable for Windows
 
+setlocal
+
 echo ==========================================
 echo ABET CPE Course Mapping - Build Script
 echo ==========================================
@@ -17,11 +19,14 @@ if errorlevel 1 (
 echo Building executable...
 echo.
 
+set HOOK_DIR=pyinstaller_hooks
+
 REM Build the executable
 pyinstaller --clean --noconfirm ^
     --name "ABET-CPE-Mapper" ^
     --windowed ^
     --onedir ^
+    --additional-hooks-dir "%HOOK_DIR%" ^
     --add-data "templates;templates" ^
     --add-data "static;static" ^
     --add-data "abet_organized.json;." ^
@@ -32,6 +37,12 @@ pyinstaller --clean --noconfirm ^
     --hidden-import=werkzeug ^
     --hidden-import=flask ^
     app.py
+
+if errorlevel 1 (
+    echo.
+    echo Build failed.
+    exit /b 1
+)
 
 echo.
 echo Build complete!

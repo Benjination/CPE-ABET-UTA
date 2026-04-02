@@ -2,6 +2,8 @@
 # Build script for ABET CPE Course Mapping System
 # Creates a standalone executable for the current platform
 
+set -euo pipefail
+
 echo "=========================================="
 echo "ABET CPE Course Mapping - Build Script"
 echo "=========================================="
@@ -14,6 +16,8 @@ then
     pip install pyinstaller
 fi
 
+HOOK_DIR="pyinstaller_hooks"
+
 echo "🔨 Building executable..."
 echo ""
 
@@ -22,6 +26,7 @@ pyinstaller --clean --noconfirm \
     --name "ABET-CPE-Mapper" \
     --windowed \
     --onedir \
+    --additional-hooks-dir "$HOOK_DIR" \
     --add-data "templates:templates" \
     --add-data "static:static" \
     --add-data "abet_organized.json:." \
