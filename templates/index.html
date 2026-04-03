@@ -918,15 +918,15 @@
             for (const [areaCode, areaInfo] of Object.entries(abet)) {
                 for (const [category, subareas] of Object.entries(areaInfo.categories)) {
                     for (const [subarea, outcomes] of Object.entries(subareas)) {
-                        outcomes.forEach((outcome, idx) => {
-                            const fullId = `${areaCode}.${category}.${subarea}.${idx + 1}`;
+                        outcomes.forEach((outcome) => {
+                            const fullId = `${areaCode}.${category}.${subarea}.${outcome.id}`;
                             if (!mappedIds.has(fullId)) {
                                 gaps.push({
                                     area_code: areaCode,
                                     area_name: areaInfo.name,
                                     category,
                                     subarea,
-                                    id: idx + 1,
+                                    id: outcome.id,
                                     outcome: outcome.outcome,
                                     full_id: fullId
                                 });
@@ -955,10 +955,10 @@
             const areaCode = parts[0];
             const category = parts[1];
             const subarea = parts[2];
-            const index = parseInt(parts[3], 10) - 1;
-
             const areaInfo = abetData?.[areaCode];
-            const outcomeObj = areaInfo?.categories?.[category]?.[subarea]?.[index];
+            const outcomeObj = areaInfo?.categories?.[category]?.[subarea]?.find(
+                (outcome) => String(outcome.id) === String(parts[3])
+            );
             return outcomeObj?.outcome || 'Outcome text not found';
         }
 
@@ -1435,11 +1435,13 @@
                         const areaCode = parts[0];
                         const category = parts[1];
                         const subarea = parts[2];
-                        const index = parseInt(parts[3]) - 1;
+                        const outcomeIdPart = parts[3];
                         
                         let outcomeText = 'Outcome text not found';
                         if (areaInfo && areaInfo.categories[category] && areaInfo.categories[category][subarea]) {
-                            const outcomeObj = areaInfo.categories[category][subarea][index];
+                            const outcomeObj = areaInfo.categories[category][subarea].find(
+                                (outcome) => String(outcome.id) === String(outcomeIdPart)
+                            );
                             outcomeText = outcomeObj?.outcome || outcomeText;
                         }
                         
@@ -1673,8 +1675,8 @@
                 // Collect all outcomes for this area
                 for (const [categoryName, categories] of Object.entries(areaData.categories)) {
                     for (const [subarea, outcomes] of Object.entries(categories)) {
-                        outcomes.forEach((outcome, idx) => {
-                            const outcomeId = `${areaCode}.${categoryName}.${subarea}.${idx + 1}`;
+                        outcomes.forEach((outcome) => {
+                            const outcomeId = `${areaCode}.${categoryName}.${subarea}.${outcome.id}`;
                             const isChecked = courseMappings.includes(outcomeId);
                             const mappedToCourses = mappingData.abet_to_course[outcomeId] || [];
                             const mappedElsewhere = mappedToCourses.filter(c => c !== selectedCourse);
