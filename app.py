@@ -10,10 +10,15 @@ import os
 import subprocess
 import sys
 import threading
+from contextlib import contextmanager
 try:
     import webview
 except Exception:
     webview = None
+try:
+    import psycopg
+except Exception:
+    psycopg = None
 from openpyxl import Workbook
 from openpyxl.styles import Alignment
 from openpyxl.styles import Font, PatternFill
@@ -45,10 +50,30 @@ app = Flask(__name__,
             template_folder=get_resource_path('templates'),
             static_folder=get_resource_path('static'))
 
+DATABASE_URL = os.environ.get('DATABASE_URL')
+
 # Disable Flask debug output for cleaner desktop app experience
 import logging
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
+
+
+def using_database():
+    """True when DATABASE_URL is configured and psycopg is installed."""
+    return bool(DATABASE_URL and psycopg)
+
+
+@contextmanager
+def get_db_connection():
+    """Yield a PostgreSQL connection when DATABASE_URL is available."""
+    if not using_database():
+        raise RuntimeError('Database backend is not configured.')
+
+    conn = psycopg.connect(DATABASE_URL)
+    try:
+        yield conn
+    finally:
+        conn.close()
 
 # Load data
 def load_data():
@@ -72,6 +97,145 @@ def load_data():
         mapping_data = json.load(f)
     
     return abet_data, courses_data, mapping_data
+
+
+def init_db_schema():
+    """Create mapping table if needed and seed from JSON once."""
+    if not using_database():
+        return
+
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                CREATE TABLE IF NOT EXISTS course_outcome_mappings (
+                    outcome_id TEXT NOT NULL,
+                    course_code TEXT NOT NULL,
+                    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+                    PRIMARY KEY (outcome_id, course_code)
+                )
+                """
+            )
+            cur.execute("SELECT COUNT(*) FROM course_outcome_mappings")
+            mapping_count = cur.fetchone()[0]
+
+            if mapping_count == 0:
+                _, _, mapping_data = load_data()
+                rows = []
+                for outcome_id, course_codes in mapping_data.get('abet_to_course', {}).items():
+                    for course_code in course_codes:
+                        rows.append((outcome_id, course_code))
+
+                if rows:
+                    cur.executemany(
+                        """
+                        INSERT INTO course_outcome_mappings (outcome_id, course_code)
+                        VALUES (%s, %s)
+                        ON CONFLICT DO NOTHING
+                        """,
+                        rows,
+                    )
+        conn.commit()
+
+
+def build_mapping_from_rows(courses_data, rows):
+    """Convert DB rows to the existing mapping JSON shape expected by the UI."""
+    course_to_abet = {code: [] for code in courses_data.keys()}
+    abet_to_course = {}
+
+    for outcome_id, course_code in rows:
+        abet_to_course.setdefault(outcome_id, []).append(course_code)
+        course_to_abet.setdefault(course_code, []).append(outcome_id)
+
+    for outcome_id in abet_to_course:
+        abet_to_course[outcome_id] = sorted(set(abet_to_course[outcome_id]))
+
+    for course_code in course_to_abet:
+        course_to_abet[course_code] = sorted(set(course_to_abet[course_code]))
+
+    return {
+        'abet_to_course': abet_to_course,
+        'course_to_abet': course_to_abet,
+    }
+
+
+def get_mapping_data(courses_data):
+    """Return mapping data from DB when configured, else from local JSON."""
+    if not using_database():
+        _, _, mapping_data = load_data()
+        return mapping_data
+
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                SELECT outcome_id, course_code
+                FROM course_outcome_mappings
+                ORDER BY outcome_id, course_code
+                """
+            )
+            rows = cur.fetchall()
+    return build_mapping_from_rows(courses_data, rows)
+
+
+def save_mapping_data(mapping_data):
+    """Persist mapping to DB when configured, else local JSON file."""
+    if not using_database():
+        data_dir = get_data_dir()
+        mapping_path = os.path.join(data_dir, 'course_abet_mapping.json')
+        with open(mapping_path, 'w') as f:
+            json.dump(mapping_data, f, indent=2)
+        return
+
+    rows = []
+    for outcome_id, course_codes in mapping_data.get('abet_to_course', {}).items():
+        for course_code in course_codes:
+            rows.append((outcome_id, course_code))
+
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute("DELETE FROM course_outcome_mappings")
+            if rows:
+                cur.executemany(
+                    """
+                    INSERT INTO course_outcome_mappings (outcome_id, course_code)
+                    VALUES (%s, %s)
+                    ON CONFLICT DO NOTHING
+                    """,
+                    rows,
+                )
+        conn.commit()
+
+
+def remove_mapping_row(outcome_id, course_code):
+    """Remove one mapping row from the active backend."""
+    if not using_database():
+        _, courses_data, mapping_data = load_data()
+        if course_code in mapping_data.get('course_to_abet', {}):
+            if outcome_id in mapping_data['course_to_abet'][course_code]:
+                mapping_data['course_to_abet'][course_code].remove(outcome_id)
+        if outcome_id in mapping_data.get('abet_to_course', {}):
+            if course_code in mapping_data['abet_to_course'][outcome_id]:
+                mapping_data['abet_to_course'][outcome_id].remove(course_code)
+                if not mapping_data['abet_to_course'][outcome_id]:
+                    del mapping_data['abet_to_course'][outcome_id]
+        save_mapping_data(mapping_data)
+        return build_mapping_from_rows(courses_data, [
+            (oid, ccode)
+            for oid, course_codes in mapping_data.get('abet_to_course', {}).items()
+            for ccode in course_codes
+        ])
+
+    with get_db_connection() as conn:
+        with conn.cursor() as cur:
+            cur.execute(
+                """
+                DELETE FROM course_outcome_mappings
+                WHERE outcome_id = %s AND course_code = %s
+                """,
+                (outcome_id, course_code),
+            )
+        conn.commit()
 
 
 def get_export_dir():
@@ -113,13 +277,15 @@ def get_courses():
 @app.route('/api/mapping')
 def get_mapping():
     """Get course-ABET mappings"""
-    _, _, mapping_data = load_data()
+    _, courses_data, _ = load_data()
+    mapping_data = get_mapping_data(courses_data)
     return jsonify(mapping_data)
 
 @app.route('/api/stats')
 def get_stats():
     """Get statistics about coverage"""
-    abet_data, courses_data, mapping_data = load_data()
+    abet_data, courses_data, _ = load_data()
+    mapping_data = get_mapping_data(courses_data)
     
     # Count total outcomes
     total_outcomes = 0
@@ -154,12 +320,7 @@ def get_stats():
 def save_mapping_route():
     """Save course-ABET mappings"""
     new_mapping = request.json
-    
-    data_dir = get_data_dir()
-    mapping_path = os.path.join(data_dir, 'course_abet_mapping.json')
-    
-    with open(mapping_path, 'w') as f:
-        json.dump(new_mapping, f, indent=2)
+    save_mapping_data(new_mapping)
     
     return jsonify({'success': True})
 
@@ -173,33 +334,15 @@ def remove_mapping():
     if not outcome_id or not course_code:
         return jsonify({'error': 'Missing outcome_id or course_code'}), 400
     
-    _, _, mapping_data = load_data()
-    
-    # Remove from course_to_abet
-    if course_code in mapping_data['course_to_abet']:
-        if outcome_id in mapping_data['course_to_abet'][course_code]:
-            mapping_data['course_to_abet'][course_code].remove(outcome_id)
-    
-    # Remove from abet_to_course
-    if outcome_id in mapping_data['abet_to_course']:
-        if course_code in mapping_data['abet_to_course'][outcome_id]:
-            mapping_data['abet_to_course'][outcome_id].remove(course_code)
-            # Clean up if no courses left
-            if not mapping_data['abet_to_course'][outcome_id]:
-                del mapping_data['abet_to_course'][outcome_id]
-    
-    # Save the updated mapping
-    data_dir = get_data_dir()
-    mapping_path = os.path.join(data_dir, 'course_abet_mapping.json')
-    with open(mapping_path, 'w') as f:
-        json.dump(mapping_data, f, indent=2)
+    remove_mapping_row(outcome_id, course_code)
     
     return jsonify({'success': True})
 
 @app.route('/api/gaps')
 def get_gaps():
     """Find ABET outcomes not covered by any course"""
-    abet_data, _, mapping_data = load_data()
+    abet_data, courses_data, _ = load_data()
+    mapping_data = get_mapping_data(courses_data)
     
     # Get all mapped outcome IDs
     mapped_outcome_ids = set(mapping_data.get('abet_to_course', {}).keys())
@@ -228,7 +371,8 @@ def get_gaps():
 @app.route('/api/export/coverage-matrix', methods=['POST'])
 def export_coverage_matrix():
     """Export full ABET-to-course coverage matrix to an Excel workbook."""
-    abet_data, courses_data, mapping_data = load_data()
+    abet_data, courses_data, _ = load_data()
+    mapping_data = get_mapping_data(courses_data)
 
     workbook = Workbook()
     worksheet = workbook.active
@@ -259,8 +403,8 @@ def export_coverage_matrix():
 
         for category, subareas in area_info['categories'].items():
             for subarea, outcomes in subareas.items():
-                for index, outcome in enumerate(outcomes, start=1):
-                    outcome_id = f'{area_code}.{category}.{subarea}.{index}'
+                for outcome in outcomes:
+                    outcome_id = f'{area_code}.{category}.{subarea}.{outcome["id"]}'
                     mapped_courses = set(abet_to_course.get(outcome_id, []))
                     for course in sorted_courses:
                         if course['code'] in mapped_courses:
@@ -322,6 +466,8 @@ def start_flask():
     app.run(host='127.0.0.1', port=5001, debug=False, use_reloader=False)
 
 if __name__ == '__main__':
+    init_db_schema()
+
     if webview is None:
         port = int(os.environ.get('PORT', '5001'))
         app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
