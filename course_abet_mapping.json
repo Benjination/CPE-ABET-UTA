@@ -3434,6 +3434,10 @@
     ],
     "CE-SWD.ELECTIVE.12.3": [
       "CSE-RELIABLE-DISTRIBUTED"
+    ],
+    "CE-CAE.CORE.1.5": [
+      "CSE2440",
+      "CSE3323"
     ]
   },
   "course_to_abet": {
@@ -4000,7 +4004,8 @@
       "CE-CAE.ELECTIVE.5.10",
       "CE-CAE.ELECTIVE.5.14",
       "CE-CAE.ELECTIVE.9.4",
-      "CE-CAE.ELECTIVE.9.5"
+      "CE-CAE.ELECTIVE.9.5",
+      "CE-CAE.CORE.1.5"
     ],
     "IE1301": [
       "CE-PPP.CORE.1.1",
@@ -4390,7 +4395,8 @@
       "CE-CAE.ELECTIVE.3.6",
       "CE-CAE.ELECTIVE.3.7",
       "CE-CAE.ELECTIVE.3.8",
-      "CE-CAE.SUPPLEMENTAL.12.1"
+      "CE-CAE.SUPPLEMENTAL.12.1",
+      "CE-CAE.CORE.1.5"
     ],
     "CSE3318": [
       "CE-CAL.CORE.1.1",

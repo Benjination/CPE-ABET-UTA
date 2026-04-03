@@ -116,6 +116,20 @@ def init_db_schema():
                 )
                 """
             )
+
+            # Data fix: CE-CAE.CORE.1.4 was duplicated in the source catalog.
+            # Keep backward compatibility by cloning existing rows to the new
+            # canonical ID CE-CAE.CORE.1.5 once (idempotent via ON CONFLICT).
+            cur.execute(
+                """
+                INSERT INTO course_outcome_mappings (outcome_id, course_code)
+                SELECT 'CE-CAE.CORE.1.5', course_code
+                FROM course_outcome_mappings
+                WHERE outcome_id = 'CE-CAE.CORE.1.4'
+                ON CONFLICT DO NOTHING
+                """
+            )
+
             cur.execute("SELECT COUNT(*) FROM course_outcome_mappings")
             mapping_count = cur.fetchone()[0]
 
