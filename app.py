@@ -9,12 +9,7 @@ import json
 import os
 import subprocess
 import sys
-import threading
 from contextlib import contextmanager
-try:
-    import webview
-except Exception:
-    webview = None
 try:
     import psycopg
 except Exception:
@@ -507,42 +502,7 @@ def export_coverage_matrix():
 
     return jsonify({'success': True, 'path': file_path})
 
-def start_flask():
-    """Start Flask server in a separate thread"""
-    app.run(host='127.0.0.1', port=5001, debug=False, use_reloader=False)
-
 if __name__ == '__main__':
     init_db_schema()
-
-    if webview is None:
-        port = int(os.environ.get('PORT', '5001'))
-        app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
-        sys.exit(0)
-
-    print("\n" + "="*60)
-    print("ABET CPE Course Mapping System")
-    print("="*60)
-    print("\n🚀 Starting desktop application...")
-    print("="*60 + "\n")
-    
-    # Start Flask in background thread
-    flask_thread = threading.Thread(target=start_flask, daemon=True)
-    flask_thread.start()
-    
-    # Wait a moment for Flask to start
-    import time
-    time.sleep(1.5)
-    
-    # Create desktop window
-    window = webview.create_window(
-        title='ABET CPE Course Mapping',
-        url='http://127.0.0.1:5001',
-        width=1400,
-        height=900,
-        resizable=True,
-        fullscreen=False,
-        min_size=(1200, 800)
-    )
-    
-    # Start the GUI (blocking call)
-    webview.start()
+    port = int(os.environ.get('PORT', '5001'))
+    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False)
