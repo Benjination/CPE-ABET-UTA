@@ -853,91 +853,11 @@
     </div>
 
     <script>
-        const STATIC_MODE = window.location.hostname.endsWith('github.io') || window.location.protocol === 'file:';
-
         let abetData = null;
         let coursesData = null;
         let statsData = null;
         let gapsData = null;
         let currentModalCourseCode = null;
-
-        function getBasePath() {
-            const path = window.location.pathname;
-            return path.endsWith('/') ? path : `${path.substring(0, path.lastIndexOf('/') + 1)}`;
-        }
-
-        async function fetchJsonWithFallback(apiPath, filePath) {
-            if (!STATIC_MODE) {
-                const apiResponse = await fetch(apiPath);
-                if (apiResponse.ok) {
-                    return apiResponse.json();
-                }
-            }
-
-            const base = getBasePath();
-            const fileResponse = await fetch(`${base}${filePath}`);
-            if (!fileResponse.ok) {
-                throw new Error(`Failed loading ${filePath}`);
-            }
-            return fileResponse.json();
-        }
-
-        function computeStats(abet, courses, mapping) {
-            let totalOutcomes = 0;
-            const outcomesByArea = {};
-
-            for (const [areaCode, areaInfo] of Object.entries(abet)) {
-                let count = 0;
-                for (const subareas of Object.values(areaInfo.categories)) {
-                    for (const outcomes of Object.values(subareas)) {
-                        count += outcomes.length;
-                    }
-                }
-                totalOutcomes += count;
-                outcomesByArea[areaCode] = {
-                    name: areaInfo.name,
-                    count
-                };
-            }
-
-            const mappedOutcomes = Object.keys(mapping.abet_to_course || {}).length;
-            return {
-                total_courses: Object.keys(courses).length,
-                total_outcomes: totalOutcomes,
-                mapped_outcomes: mappedOutcomes,
-                unmapped_outcomes: totalOutcomes - mappedOutcomes,
-                coverage_percentage: totalOutcomes > 0 ? (mappedOutcomes / totalOutcomes) * 100 : 0,
-                outcomes_by_area: outcomesByArea
-            };
-        }
-
-        function computeGaps(abet, mapping) {
-            const mappedIds = new Set(Object.keys(mapping.abet_to_course || {}));
-            const gaps = [];
-
-            for (const [areaCode, areaInfo] of Object.entries(abet)) {
-                for (const [category, subareas] of Object.entries(areaInfo.categories)) {
-                    for (const [subarea, outcomes] of Object.entries(subareas)) {
-                        outcomes.forEach((outcome) => {
-                            const fullId = `${areaCode}.${category}.${subarea}.${outcome.id}`;
-                            if (!mappedIds.has(fullId)) {
-                                gaps.push({
-                                    area_code: areaCode,
-                                    area_name: areaInfo.name,
-                                    category,
-                                    subarea,
-                                    id: outcome.id,
-                                    outcome: outcome.outcome,
-                                    full_id: fullId
-                                });
-                            }
-                        });
-                    }
-                }
-            }
-
-            return gaps;
-        }
 
         function escapeHtml(value) {
             return String(value)
@@ -963,10 +883,6 @@
         }
 
         async function exportCoverageMatrix() {
-            if (STATIC_MODE) {
-                alert('Coverage matrix export is disabled in GitHub Pages static mode.');
-                return;
-            }
 
             try {
                 const response = await fetch('/api/export/coverage-matrix', {
@@ -1092,20 +1008,17 @@
         // Load all data on page load
         async function loadData() {
             try {
-                const [abet, courses, mapping] = await Promise.all([
-                    fetchJsonWithFallback('/api/abet', 'abet_organized.json'),
-                    fetchJsonWithFallback('/api/courses', 'courses_organized.json'),
-                    fetchJsonWithFallback('/api/mapping', 'course_abet_mapping.json')
+                const [abet, courses, stats, gaps] = await Promise.all([
+                    fetch('/api/abet').then(r => r.json()),
+                    fetch('/api/courses').then(r => r.json()),
+                    fetch('/api/stats').then(r => r.json()),
+                    fetch('/api/gaps').then(r => r.json())
                 ]);
-
-                const stats = computeStats(abet, courses, mapping);
-                const gaps = computeGaps(abet, mapping);
 
                 abetData = abet;
                 coursesData = courses;
                 statsData = stats;
                 gapsData = gaps;
-                mappingData = mapping;
 
                 renderStats();
                 renderABET();
@@ -1497,10 +1410,6 @@
         }
 
         async function removeOutcome(courseCode, outcomeId) {
-            if (STATIC_MODE) {
-                alert('Read-only mode on GitHub Pages: editing is disabled.');
-                return;
-            }
 
             if (!confirm(`Remove ${outcomeId} from ${courseCode}?`)) {
                 return;
@@ -1578,7 +1487,8 @@
         }
 
         async function loadMappingData() {
-            mappingData = await fetchJsonWithFallback('/api/mapping', 'course_abet_mapping.json');
+            const response = await fetch('/api/mapping');
+            mappingData = await response.json();
         }
 
         function renderCourseSelector() {
@@ -1645,8 +1555,8 @@
                         <h3>${course.code} - ${course.name}</h3>
                         <div style="color: #6c757d; margin-top: 5px;">${course.description}</div>
                     </div>
-                    <button class="save-mapping-btn" onclick="saveMappings()" ${STATIC_MODE || !pendingChanges ? 'disabled' : ''}>
-                        ${STATIC_MODE ? 'Read Only (GitHub Pages)' : 'Save Changes'}
+                    <button class="save-mapping-btn" onclick="saveMappings()" ${!pendingChanges ? 'disabled' : ''}>
+                        Save Changes
                     </button>
                 </div>
 
@@ -1816,10 +1726,6 @@
         }
 
         async function saveMappings() {
-            if (STATIC_MODE) {
-                alert('Read-only mode on GitHub Pages: edits are not persisted.');
-                return;
-            }
 
             try {
                 const response = await fetch('/api/mapping/save', {
@@ -1852,10 +1758,6 @@
         }
 
         async function assignGapToCourse(outcomeId) {
-            if (STATIC_MODE) {
-                alert('Read-only mode on GitHub Pages: editing is disabled.');
-                return;
-            }
 
             // Get the selected course from the dropdown
             const selectId = `course-select-${outcomeId.replace(/\./g, '-')}`;
