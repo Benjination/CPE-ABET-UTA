@@ -165,6 +165,8 @@ def get_mapping_data(courses_data):
         _, _, mapping_data = load_data()
         return mapping_data
 
+    init_db_schema()
+
     with get_db_connection() as conn:
         with conn.cursor() as cur:
             cur.execute(
@@ -186,6 +188,8 @@ def save_mapping_data(mapping_data):
         with open(mapping_path, 'w') as f:
             json.dump(mapping_data, f, indent=2)
         return
+
+    init_db_schema()
 
     rows = []
     for outcome_id, course_codes in mapping_data.get('abet_to_course', {}).items():
@@ -225,6 +229,8 @@ def remove_mapping_row(outcome_id, course_code):
             for oid, course_codes in mapping_data.get('abet_to_course', {}).items()
             for ccode in course_codes
         ])
+
+    init_db_schema()
 
     with get_db_connection() as conn:
         with conn.cursor() as cur:
@@ -280,6 +286,32 @@ def get_mapping():
     _, courses_data, _ = load_data()
     mapping_data = get_mapping_data(courses_data)
     return jsonify(mapping_data)
+
+
+@app.route('/api/storage-mode')
+def get_storage_mode():
+    """Return current persistence backend and DB connectivity status."""
+    status = {
+        'backend': 'database' if using_database() else 'json',
+        'database_url_present': bool(DATABASE_URL),
+        'psycopg_available': bool(psycopg),
+        'database_connected': False,
+        'mapping_rows': None,
+        'error': None,
+    }
+
+    if using_database():
+        try:
+            init_db_schema()
+            with get_db_connection() as conn:
+                with conn.cursor() as cur:
+                    cur.execute('SELECT COUNT(*) FROM course_outcome_mappings')
+                    status['mapping_rows'] = cur.fetchone()[0]
+            status['database_connected'] = True
+        except Exception as exc:
+            status['error'] = str(exc)
+
+    return jsonify(status)
 
 @app.route('/api/stats')
 def get_stats():
